@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		623BD981235E9BC5008A9C74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BD980235E9BC5008A9C74 /* AppDelegate.swift */; };
+		623BD983235E9BC5008A9C74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BD982235E9BC5008A9C74 /* SceneDelegate.swift */; };
+		623BD985235E9BC5008A9C74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BD984235E9BC5008A9C74 /* ViewController.swift */; };
+		623BD988235E9BC5008A9C74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 623BD986235E9BC5008A9C74 /* Main.storyboard */; };
+		623BD98A235E9BC6008A9C74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 623BD989235E9BC6008A9C74 /* Assets.xcassets */; };
+		623BD98D235E9BC6008A9C74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 623BD98B235E9BC6008A9C74 /* LaunchScreen.storyboard */; };
+		623BD998235E9BC7008A9C74 /* LOTTEHOTELFMSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BD997235E9BC7008A9C74 /* LOTTEHOTELFMSTests.swift */; };
+		623BD9A3235E9BC7008A9C74 /* LOTTEHOTELFMSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BD9A2235E9BC7008A9C74 /* LOTTEHOTELFMSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		623BD994235E9BC7008A9C74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 623BD975235E9BC5008A9C74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 623BD97C235E9BC5008A9C74;
+			remoteInfo = LOTTEHOTELFMS;
+		};
+		623BD99F235E9BC7008A9C74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 623BD975235E9BC5008A9C74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 623BD97C235E9BC5008A9C74;
+			remoteInfo = LOTTEHOTELFMS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		623BD97D235E9BC5008A9C74 /* LOTTEHOTELFMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LOTTEHOTELFMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		623BD980235E9BC5008A9C74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		623BD982235E9BC5008A9C74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		623BD984235E9BC5008A9C74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		623BD987235E9BC5008A9C74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		623BD989235E9BC6008A9C74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		623BD98C235E9BC6008A9C74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		623BD98E235E9BC6008A9C74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		623BD993235E9BC7008A9C74 /* LOTTEHOTELFMSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LOTTEHOTELFMSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		623BD997235E9BC7008A9C74 /* LOTTEHOTELFMSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOTTEHOTELFMSTests.swift; sourceTree = "<group>"; };
+		623BD999235E9BC7008A9C74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		623BD99E235E9BC7008A9C74 /* LOTTEHOTELFMSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LOTTEHOTELFMSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		623BD9A2235E9BC7008A9C74 /* LOTTEHOTELFMSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOTTEHOTELFMSUITests.swift; sourceTree = "<group>"; };
+		623BD9A4235E9BC7008A9C74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		623BD97A235E9BC5008A9C74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		623BD990235E9BC7008A9C74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		623BD99B235E9BC7008A9C74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		623BD974235E9BC5008A9C74 = {
+			isa = PBXGroup;
+			children = (
+				623BD97F235E9BC5008A9C74 /* LOTTEHOTELFMS */,
+				623BD996235E9BC7008A9C74 /* LOTTEHOTELFMSTests */,
+				623BD9A1235E9BC7008A9C74 /* LOTTEHOTELFMSUITests */,
+				623BD97E235E9BC5008A9C74 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		623BD97E235E9BC5008A9C74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				623BD97D235E9BC5008A9C74 /* LOTTEHOTELFMS.app */,
+				623BD993235E9BC7008A9C74 /* LOTTEHOTELFMSTests.xctest */,
+				623BD99E235E9BC7008A9C74 /* LOTTEHOTELFMSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		623BD97F235E9BC5008A9C74 /* LOTTEHOTELFMS */ = {
+			isa = PBXGroup;
+			children = (
+				623BD980235E9BC5008A9C74 /* AppDelegate.swift */,
+				623BD982235E9BC5008A9C74 /* SceneDelegate.swift */,
+				623BD984235E9BC5008A9C74 /* ViewController.swift */,
+				623BD986235E9BC5008A9C74 /* Main.storyboard */,
+				623BD989235E9BC6008A9C74 /* Assets.xcassets */,
+				623BD98B235E9BC6008A9C74 /* LaunchScreen.storyboard */,
+				623BD98E235E9BC6008A9C74 /* Info.plist */,
+			);
+			path = LOTTEHOTELFMS;
+			sourceTree = "<group>";
+		};
+		623BD996235E9BC7008A9C74 /* LOTTEHOTELFMSTests */ = {
+			isa = PBXGroup;
+			children = (
+				623BD997235E9BC7008A9C74 /* LOTTEHOTELFMSTests.swift */,
+				623BD999235E9BC7008A9C74 /* Info.plist */,
+			);
+			path = LOTTEHOTELFMSTests;
+			sourceTree = "<group>";
+		};
+		623BD9A1235E9BC7008A9C74 /* LOTTEHOTELFMSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				623BD9A2235E9BC7008A9C74 /* LOTTEHOTELFMSUITests.swift */,
+				623BD9A4235E9BC7008A9C74 /* Info.plist */,
+			);
+			path = LOTTEHOTELFMSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		623BD97C235E9BC5008A9C74 /* LOTTEHOTELFMS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 623BD9A7235E9BC7008A9C74 /* Build configuration list for PBXNativeTarget "LOTTEHOTELFMS" */;
+			buildPhases = (
+				623BD979235E9BC5008A9C74 /* Sources */,
+				623BD97A235E9BC5008A9C74 /* Frameworks */,
+				623BD97B235E9BC5008A9C74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LOTTEHOTELFMS;
+			productName = LOTTEHOTELFMS;
+			productReference = 623BD97D235E9BC5008A9C74 /* LOTTEHOTELFMS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		623BD992235E9BC7008A9C74 /* LOTTEHOTELFMSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 623BD9AA235E9BC7008A9C74 /* Build configuration list for PBXNativeTarget "LOTTEHOTELFMSTests" */;
+			buildPhases = (
+				623BD98F235E9BC7008A9C74 /* Sources */,
+				623BD990235E9BC7008A9C74 /* Frameworks */,
+				623BD991235E9BC7008A9C74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				623BD995235E9BC7008A9C74 /* PBXTargetDependency */,
+			);
+			name = LOTTEHOTELFMSTests;
+			productName = LOTTEHOTELFMSTests;
+			productReference = 623BD993235E9BC7008A9C74 /* LOTTEHOTELFMSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		623BD99D235E9BC7008A9C74 /* LOTTEHOTELFMSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 623BD9AD235E9BC7008A9C74 /* Build configuration list for PBXNativeTarget "LOTTEHOTELFMSUITests" */;
+			buildPhases = (
+				623BD99A235E9BC7008A9C74 /* Sources */,
+				623BD99B235E9BC7008A9C74 /* Frameworks */,
+				623BD99C235E9BC7008A9C74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				623BD9A0235E9BC7008A9C74 /* PBXTargetDependency */,
+			);
+			name = LOTTEHOTELFMSUITests;
+			productName = LOTTEHOTELFMSUITests;
+			productReference = 623BD99E235E9BC7008A9C74 /* LOTTEHOTELFMSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		623BD975235E9BC5008A9C74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = ldcc;
+				TargetAttributes = {
+					623BD97C235E9BC5008A9C74 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					623BD992235E9BC7008A9C74 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 623BD97C235E9BC5008A9C74;
+					};
+					623BD99D235E9BC7008A9C74 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 623BD97C235E9BC5008A9C74;
+					};
+				};
+			};
+			buildConfigurationList = 623BD978235E9BC5008A9C74 /* Build configuration list for PBXProject "LOTTEHOTELFMS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 623BD974235E9BC5008A9C74;
+			productRefGroup = 623BD97E235E9BC5008A9C74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				623BD97C235E9BC5008A9C74 /* LOTTEHOTELFMS */,
+				623BD992235E9BC7008A9C74 /* LOTTEHOTELFMSTests */,
+				623BD99D235E9BC7008A9C74 /* LOTTEHOTELFMSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		623BD97B235E9BC5008A9C74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				623BD98D235E9BC6008A9C74 /* LaunchScreen.storyboard in Resources */,
+				623BD98A235E9BC6008A9C74 /* Assets.xcassets in Resources */,
+				623BD988235E9BC5008A9C74 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		623BD991235E9BC7008A9C74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		623BD99C235E9BC7008A9C74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		623BD979235E9BC5008A9C74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				623BD985235E9BC5008A9C74 /* ViewController.swift in Sources */,
+				623BD981235E9BC5008A9C74 /* AppDelegate.swift in Sources */,
+				623BD983235E9BC5008A9C74 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		623BD98F235E9BC7008A9C74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				623BD998235E9BC7008A9C74 /* LOTTEHOTELFMSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		623BD99A235E9BC7008A9C74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				623BD9A3235E9BC7008A9C74 /* LOTTEHOTELFMSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		623BD995235E9BC7008A9C74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 623BD97C235E9BC5008A9C74 /* LOTTEHOTELFMS */;
+			targetProxy = 623BD994235E9BC7008A9C74 /* PBXContainerItemProxy */;
+		};
+		623BD9A0235E9BC7008A9C74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 623BD97C235E9BC5008A9C74 /* LOTTEHOTELFMS */;
+			targetProxy = 623BD99F235E9BC7008A9C74 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		623BD986235E9BC5008A9C74 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				623BD987235E9BC5008A9C74 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		623BD98B235E9BC6008A9C74 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				623BD98C235E9BC6008A9C74 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		623BD9A5235E9BC7008A9C74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		623BD9A6235E9BC7008A9C74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		623BD9A8235E9BC7008A9C74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3MGS9MLQ26;
+				INFOPLIST_FILE = LOTTEHOTELFMS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ldcc.LOTTEHOTELFMS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		623BD9A9235E9BC7008A9C74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3MGS9MLQ26;
+				INFOPLIST_FILE = LOTTEHOTELFMS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ldcc.LOTTEHOTELFMS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		623BD9AB235E9BC7008A9C74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3MGS9MLQ26;
+				INFOPLIST_FILE = LOTTEHOTELFMSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ldcc.LOTTEHOTELFMSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LOTTEHOTELFMS.app/LOTTEHOTELFMS";
+			};
+			name = Debug;
+		};
+		623BD9AC235E9BC7008A9C74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3MGS9MLQ26;
+				INFOPLIST_FILE = LOTTEHOTELFMSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ldcc.LOTTEHOTELFMSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LOTTEHOTELFMS.app/LOTTEHOTELFMS";
+			};
+			name = Release;
+		};
+		623BD9AE235E9BC7008A9C74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3MGS9MLQ26;
+				INFOPLIST_FILE = LOTTEHOTELFMSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ldcc.LOTTEHOTELFMSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LOTTEHOTELFMS;
+			};
+			name = Debug;
+		};
+		623BD9AF235E9BC7008A9C74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3MGS9MLQ26;
+				INFOPLIST_FILE = LOTTEHOTELFMSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ldcc.LOTTEHOTELFMSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LOTTEHOTELFMS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		623BD978235E9BC5008A9C74 /* Build configuration list for PBXProject "LOTTEHOTELFMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				623BD9A5235E9BC7008A9C74 /* Debug */,
+				623BD9A6235E9BC7008A9C74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		623BD9A7235E9BC7008A9C74 /* Build configuration list for PBXNativeTarget "LOTTEHOTELFMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				623BD9A8235E9BC7008A9C74 /* Debug */,
+				623BD9A9235E9BC7008A9C74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		623BD9AA235E9BC7008A9C74 /* Build configuration list for PBXNativeTarget "LOTTEHOTELFMSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				623BD9AB235E9BC7008A9C74 /* Debug */,
+				623BD9AC235E9BC7008A9C74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		623BD9AD235E9BC7008A9C74 /* Build configuration list for PBXNativeTarget "LOTTEHOTELFMSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				623BD9AE235E9BC7008A9C74 /* Debug */,
+				623BD9AF235E9BC7008A9C74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 623BD975235E9BC5008A9C74 /* Project object */;
+}
