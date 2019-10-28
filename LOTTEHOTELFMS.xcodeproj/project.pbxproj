@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		623BD981235E9BC5008A9C74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BD980235E9BC5008A9C74 /* AppDelegate.swift */; };
 		623BD983235E9BC5008A9C74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BD982235E9BC5008A9C74 /* SceneDelegate.swift */; };
-		623BD985235E9BC5008A9C74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BD984235E9BC5008A9C74 /* ViewController.swift */; };
+		623BD985235E9BC5008A9C74 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BD984235E9BC5008A9C74 /* LoadingViewController.swift */; };
 		623BD988235E9BC5008A9C74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 623BD986235E9BC5008A9C74 /* Main.storyboard */; };
 		623BD98D235E9BC6008A9C74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 623BD98B235E9BC6008A9C74 /* LaunchScreen.storyboard */; };
 		623BD998235E9BC7008A9C74 /* LOTTEHOTELFMSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BD997235E9BC7008A9C74 /* LOTTEHOTELFMSTests.swift */; };
 		623BD9A3235E9BC7008A9C74 /* LOTTEHOTELFMSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BD9A2235E9BC7008A9C74 /* LOTTEHOTELFMSUITests.swift */; };
 		62955E182366D62E00177E15 /* splashimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 62955E172366D62E00177E15 /* splashimage.png */; };
 		62955E1A2366D7BD00177E15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62955E192366D7BD00177E15 /* Assets.xcassets */; };
+		62955E1C2366DDB900177E15 /* MainWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62955E1B2366DDB900177E15 /* MainWebViewController.swift */; };
+		62955E1E2366DEAD00177E15 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62955E1D2366DEAD00177E15 /* SettingViewController.swift */; };
+		62955E212366E7A700177E15 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62955E202366E7A700177E15 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,7 @@
 		623BD97D235E9BC5008A9C74 /* LOTTEHOTELFMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LOTTEHOTELFMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		623BD980235E9BC5008A9C74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		623BD982235E9BC5008A9C74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		623BD984235E9BC5008A9C74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		623BD984235E9BC5008A9C74 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		623BD987235E9BC5008A9C74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		623BD98C235E9BC6008A9C74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		623BD98E235E9BC6008A9C74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +54,9 @@
 		623BD9A4235E9BC7008A9C74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62955E172366D62E00177E15 /* splashimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashimage.png; sourceTree = "<group>"; };
 		62955E192366D7BD00177E15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		62955E1B2366DDB900177E15 /* MainWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWebViewController.swift; sourceTree = "<group>"; };
+		62955E1D2366DEAD00177E15 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		62955E202366E7A700177E15 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		623BD97F235E9BC5008A9C74 /* LOTTEHOTELFMS */ = {
 			isa = PBXGroup;
 			children = (
+				62955E1F2366E13D00177E15 /* Util */,
 				6260F1992361ADFF00964DA4 /* Application */,
 				6260F1952361AD1100964DA4 /* Controller */,
 				6260F1962361AD9300964DA4 /* Storyboard */,
@@ -140,7 +147,9 @@
 		6260F1952361AD1100964DA4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				623BD984235E9BC5008A9C74 /* ViewController.swift */,
+				623BD984235E9BC5008A9C74 /* LoadingViewController.swift */,
+				62955E1B2366DDB900177E15 /* MainWebViewController.swift */,
+				62955E1D2366DEAD00177E15 /* SettingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -169,6 +178,14 @@
 				623BD982235E9BC5008A9C74 /* SceneDelegate.swift */,
 			);
 			name = Application;
+			sourceTree = "<group>";
+		};
+		62955E1F2366E13D00177E15 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				62955E202366E7A700177E15 /* Reachability.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,7 +320,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				623BD985235E9BC5008A9C74 /* ViewController.swift in Sources */,
+				62955E1E2366DEAD00177E15 /* SettingViewController.swift in Sources */,
+				62955E1C2366DDB900177E15 /* MainWebViewController.swift in Sources */,
+				62955E212366E7A700177E15 /* Reachability.swift in Sources */,
+				623BD985235E9BC5008A9C74 /* LoadingViewController.swift in Sources */,
 				623BD981235E9BC5008A9C74 /* AppDelegate.swift in Sources */,
 				623BD983235E9BC5008A9C74 /* SceneDelegate.swift in Sources */,
 			);
