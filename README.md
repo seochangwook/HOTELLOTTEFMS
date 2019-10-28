@@ -28,9 +28,9 @@ Hotel Lotte facility management system maximizes asset value by standardizing wo
 
 Representing development progress as in progress / completed.
 
-| Development work | Progress |
-| ------ | ------ |
-| Initial creation of project (Xcode) | completed |
+| Development work | Progress | Commiter |
+| ------ | ------ | ------ |
+| Initial creation of project (Xcode) | completed | scw |
 
 ### Library
 
