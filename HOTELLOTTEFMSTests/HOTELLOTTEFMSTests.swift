@@ -7,9 +7,9 @@
 //
 
 import XCTest
-@testable import LOTTEHOTELFMS
+@testable import HOTELLOTTEFMS
 
-class LOTTEHOTELFMSTests: XCTestCase {
+class HOTELLOTTEFMSTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

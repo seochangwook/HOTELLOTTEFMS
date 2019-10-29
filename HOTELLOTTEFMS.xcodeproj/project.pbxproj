@@ -12,8 +12,8 @@
 		623BD985235E9BC5008A9C74 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BD984235E9BC5008A9C74 /* LoadingViewController.swift */; };
 		623BD988235E9BC5008A9C74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 623BD986235E9BC5008A9C74 /* Main.storyboard */; };
 		623BD98D235E9BC6008A9C74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 623BD98B235E9BC6008A9C74 /* LaunchScreen.storyboard */; };
-		623BD998235E9BC7008A9C74 /* LOTTEHOTELFMSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BD997235E9BC7008A9C74 /* LOTTEHOTELFMSTests.swift */; };
-		623BD9A3235E9BC7008A9C74 /* LOTTEHOTELFMSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BD9A2235E9BC7008A9C74 /* LOTTEHOTELFMSUITests.swift */; };
+		623BD998235E9BC7008A9C74 /* HOTELLOTTEFMSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BD997235E9BC7008A9C74 /* HOTELLOTTEFMSTests.swift */; };
+		623BD9A3235E9BC7008A9C74 /* HOTELLOTTEFMSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BD9A2235E9BC7008A9C74 /* HOTELLOTTEFMSUITests.swift */; };
 		62955E182366D62E00177E15 /* splashimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 62955E172366D62E00177E15 /* splashimage.png */; };
 		62955E1A2366D7BD00177E15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62955E192366D7BD00177E15 /* Assets.xcassets */; };
 		62955E1C2366DDB900177E15 /* MainWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62955E1B2366DDB900177E15 /* MainWebViewController.swift */; };
@@ -47,10 +47,10 @@
 		623BD98C235E9BC6008A9C74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		623BD98E235E9BC6008A9C74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		623BD993235E9BC7008A9C74 /* HOTELLOTTEFMSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HOTELLOTTEFMSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		623BD997235E9BC7008A9C74 /* LOTTEHOTELFMSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOTTEHOTELFMSTests.swift; sourceTree = "<group>"; };
+		623BD997235E9BC7008A9C74 /* HOTELLOTTEFMSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOTELLOTTEFMSTests.swift; sourceTree = "<group>"; };
 		623BD999235E9BC7008A9C74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		623BD99E235E9BC7008A9C74 /* HOTELLOTTEFMSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HOTELLOTTEFMSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		623BD9A2235E9BC7008A9C74 /* LOTTEHOTELFMSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOTTEHOTELFMSUITests.swift; sourceTree = "<group>"; };
+		623BD9A2235E9BC7008A9C74 /* HOTELLOTTEFMSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOTELLOTTEFMSUITests.swift; sourceTree = "<group>"; };
 		623BD9A4235E9BC7008A9C74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62955E172366D62E00177E15 /* splashimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashimage.png; sourceTree = "<group>"; };
 		62955E192366D7BD00177E15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
@@ -87,9 +87,9 @@
 		623BD974235E9BC5008A9C74 = {
 			isa = PBXGroup;
 			children = (
-				623BD97F235E9BC5008A9C74 /* LOTTEHOTELFMS */,
-				623BD996235E9BC7008A9C74 /* LOTTEHOTELFMSTests */,
-				623BD9A1235E9BC7008A9C74 /* LOTTEHOTELFMSUITests */,
+				623BD97F235E9BC5008A9C74 /* HOTELLOTTEFMS */,
+				623BD996235E9BC7008A9C74 /* HOTELLOTTEFMSTests */,
+				623BD9A1235E9BC7008A9C74 /* HOTELLOTTEFMSUITests */,
 				623BD97E235E9BC5008A9C74 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,7 +104,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		623BD97F235E9BC5008A9C74 /* LOTTEHOTELFMS */ = {
+		623BD97F235E9BC5008A9C74 /* HOTELLOTTEFMS */ = {
 			isa = PBXGroup;
 			children = (
 				62955E1F2366E13D00177E15 /* Util */,
@@ -115,27 +115,24 @@
 				623BD98E235E9BC6008A9C74 /* Info.plist */,
 				62955E192366D7BD00177E15 /* Assets.xcassets */,
 			);
-			name = LOTTEHOTELFMS;
 			path = HOTELLOTTEFMS;
 			sourceTree = "<group>";
 		};
-		623BD996235E9BC7008A9C74 /* LOTTEHOTELFMSTests */ = {
+		623BD996235E9BC7008A9C74 /* HOTELLOTTEFMSTests */ = {
 			isa = PBXGroup;
 			children = (
-				623BD997235E9BC7008A9C74 /* LOTTEHOTELFMSTests.swift */,
+				623BD997235E9BC7008A9C74 /* HOTELLOTTEFMSTests.swift */,
 				623BD999235E9BC7008A9C74 /* Info.plist */,
 			);
-			name = LOTTEHOTELFMSTests;
 			path = HOTELLOTTEFMSTests;
 			sourceTree = "<group>";
 		};
-		623BD9A1235E9BC7008A9C74 /* LOTTEHOTELFMSUITests */ = {
+		623BD9A1235E9BC7008A9C74 /* HOTELLOTTEFMSUITests */ = {
 			isa = PBXGroup;
 			children = (
-				623BD9A2235E9BC7008A9C74 /* LOTTEHOTELFMSUITests.swift */,
+				623BD9A2235E9BC7008A9C74 /* HOTELLOTTEFMSUITests.swift */,
 				623BD9A4235E9BC7008A9C74 /* Info.plist */,
 			);
-			name = LOTTEHOTELFMSUITests;
 			path = HOTELLOTTEFMSUITests;
 			sourceTree = "<group>";
 		};
@@ -336,7 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				623BD998235E9BC7008A9C74 /* LOTTEHOTELFMSTests.swift in Sources */,
+				623BD998235E9BC7008A9C74 /* HOTELLOTTEFMSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				623BD9A3235E9BC7008A9C74 /* LOTTEHOTELFMSUITests.swift in Sources */,
+				623BD9A3235E9BC7008A9C74 /* HOTELLOTTEFMSUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
