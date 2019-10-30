@@ -1,0 +1,6 @@
+framework module Pods_HOTELLOTTEFMS {
+  umbrella header "Pods-HOTELLOTTEFMS-umbrella.h"
+
+  export *
+  module * { export * }
+}

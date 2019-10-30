@@ -11,7 +11,7 @@
         <!--Main Web View Controller-->
         <scene sceneID="hbm-kg-dOI">
             <objects>
-                <viewController id="NoD-p7-2oF" customClass="MainWebViewController" customModule="LOTTEHOTELFMS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NoD-p7-2oF" customClass="MainWebViewController" customModule="HOTELLOTTEFMS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zv0-Vk-o1v">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,7 +42,7 @@
         <!--Loading View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoadingViewController" customModule="LOTTEHOTELFMS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoadingViewController" customModule="HOTELLOTTEFMS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,7 +77,7 @@
         <!--Setting View Controller-->
         <scene sceneID="R8W-9k-FMZ">
             <objects>
-                <viewController id="2Pu-ii-ruD" customClass="SettingViewController" customModule="LOTTEHOTELFMS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2Pu-ii-ruD" customClass="SettingViewController" customModule="HOTELLOTTEFMS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ebw-ei-q4d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -119,6 +119,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PYO-7n-EC2"/>
+        <segue reference="TJc-SJ-HoA"/>
     </inferredMetricsTieBreakers>
 </document>

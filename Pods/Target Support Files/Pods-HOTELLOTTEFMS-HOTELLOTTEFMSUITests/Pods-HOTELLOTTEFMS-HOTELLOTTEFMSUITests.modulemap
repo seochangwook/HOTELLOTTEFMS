@@ -1,0 +1,6 @@
+framework module Pods_HOTELLOTTEFMS_HOTELLOTTEFMSUITests {
+  umbrella header "Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

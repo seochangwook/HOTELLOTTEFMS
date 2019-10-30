@@ -1,0 +1,757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FD66AC5D7CE654AD286E96811878DA4 /* Pods-HOTELLOTTEFMSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AAA3FFF27612FEE6B8A26ECD3F9181F /* Pods-HOTELLOTTEFMSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		313FABB19CFB7A409B037BB9CA936832 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		34C3868D8C2424EACABBBA9AA8DCCF18 /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A5B62CF528D466EDE35BDF894555D4 /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41E13BABD59B49BBF16AEEBA6B6ADE16 /* Pods-HOTELLOTTEFMSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A878468746919EA5B570A54C08ABA11 /* Pods-HOTELLOTTEFMSTests-dummy.m */; };
+		85D609234711BAFD595C2D08AC904D74 /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C3738396A4FE73BAA9607033C370 /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests-dummy.m */; };
+		8B4289D215BA377D217356C1D059AA54 /* Pods-HOTELLOTTEFMS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54791E979F4A17A27030209DA825C441 /* Pods-HOTELLOTTEFMS-dummy.m */; };
+		C70B43295852F4F48AA07407DE54B885 /* Pods-HOTELLOTTEFMS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 38277BDAFAAEDE7CB4B2C96B0F7BCFBF /* Pods-HOTELLOTTEFMS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE132C1C874AA06603984797F08DEE11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		E57C2CFFA53FE2B521BB26A76E8E461A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7E93E128B625E10128E520DC4C3F3F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCFE6840FAE1F585C3602F85C5C43622;
+			remoteInfo = "Pods-HOTELLOTTEFMS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03A5B62CF528D466EDE35BDF894555D4 /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests-umbrella.h"; sourceTree = "<group>"; };
+		06F3AAEFECD1931A556911A5E874AAB6 /* Pods-HOTELLOTTEFMSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HOTELLOTTEFMSTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1585563C008F4B5F6603681EA71F351E /* Pods-HOTELLOTTEFMS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HOTELLOTTEFMS.modulemap"; sourceTree = "<group>"; };
+		1AAA3FFF27612FEE6B8A26ECD3F9181F /* Pods-HOTELLOTTEFMSTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HOTELLOTTEFMSTests-umbrella.h"; sourceTree = "<group>"; };
+		26D4C3738396A4FE73BAA9607033C370 /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests-dummy.m"; sourceTree = "<group>"; };
+		2A878468746919EA5B570A54C08ABA11 /* Pods-HOTELLOTTEFMSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HOTELLOTTEFMSTests-dummy.m"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		38277BDAFAAEDE7CB4B2C96B0F7BCFBF /* Pods-HOTELLOTTEFMS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HOTELLOTTEFMS-umbrella.h"; sourceTree = "<group>"; };
+		39219BF564313452BFCDEFF865497803 /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4B1B1E4D585F4F0A8C82953B57156108 /* Pods_HOTELLOTTEFMS_HOTELLOTTEFMSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HOTELLOTTEFMS_HOTELLOTTEFMSUITests.framework; path = "Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C959E323D9AFB4690B554B6EDCD2D20 /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		54791E979F4A17A27030209DA825C441 /* Pods-HOTELLOTTEFMS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HOTELLOTTEFMS-dummy.m"; sourceTree = "<group>"; };
+		6CE400B69B86E5600B7A213F171FB6E9 /* Pods-HOTELLOTTEFMS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HOTELLOTTEFMS.release.xcconfig"; sourceTree = "<group>"; };
+		7206E0DA18335B6A64FD8572D1F418C8 /* Pods_HOTELLOTTEFMSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HOTELLOTTEFMSTests.framework; path = "Pods-HOTELLOTTEFMSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77D47FC31059FF100389EA098855B2F7 /* Pods-HOTELLOTTEFMS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HOTELLOTTEFMS-acknowledgements.plist"; sourceTree = "<group>"; };
+		79E12E7D683A4E38ACD167470505623E /* Pods_HOTELLOTTEFMS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HOTELLOTTEFMS.framework; path = "Pods-HOTELLOTTEFMS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C353253D917E809B485F28B5AC19BEE /* Pods-HOTELLOTTEFMS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HOTELLOTTEFMS.debug.xcconfig"; sourceTree = "<group>"; };
+		89896D0458AAF7302D57A9E5C897E55A /* Pods-HOTELLOTTEFMSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HOTELLOTTEFMSTests.modulemap"; sourceTree = "<group>"; };
+		8CD10ACE3354A8B55A645B94C58D95AA /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A6122D27F605504F35BD426335C50C4A /* Pods-HOTELLOTTEFMSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HOTELLOTTEFMSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CBDA86BFAFE1579DF9D349FF133AD7A4 /* Pods-HOTELLOTTEFMSTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HOTELLOTTEFMSTests-Info.plist"; sourceTree = "<group>"; };
+		D44EA9CBDEED639C465CEC8854CECDD8 /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DC6CAD3A8DB4AC89E925F1F13F84E193 /* Pods-HOTELLOTTEFMSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HOTELLOTTEFMSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E4F105B450550B236AA2D9AB3732D8DF /* Pods-HOTELLOTTEFMS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HOTELLOTTEFMS-Info.plist"; sourceTree = "<group>"; };
+		EB5EA68DC3EF0286E7E7414D7CF3F15C /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EF3CB6C2BDCA2A47C43678998F658933 /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests.modulemap"; sourceTree = "<group>"; };
+		F945996BB8DAE25DFC73B1BED76A3EC1 /* Pods-HOTELLOTTEFMSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HOTELLOTTEFMSTests.release.xcconfig"; sourceTree = "<group>"; };
+		FE97F63D8CA5152F7051A71CEBC4BBC4 /* Pods-HOTELLOTTEFMS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HOTELLOTTEFMS-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B866F3C419283402E948ADC44F191F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				313FABB19CFB7A409B037BB9CA936832 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		714368FA943A68E290CDFE2EFC358F04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57C2CFFA53FE2B521BB26A76E8E461A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BCFC16D1E3C9756BF56975E7134F9B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE132C1C874AA06603984797F08DEE11 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B175DCD8C3D480B15B24162CBEC07DD /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF3CB6C2BDCA2A47C43678998F658933 /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests.modulemap */,
+				39219BF564313452BFCDEFF865497803 /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests-acknowledgements.markdown */,
+				4C959E323D9AFB4690B554B6EDCD2D20 /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests-acknowledgements.plist */,
+				26D4C3738396A4FE73BAA9607033C370 /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests-dummy.m */,
+				8CD10ACE3354A8B55A645B94C58D95AA /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests-Info.plist */,
+				03A5B62CF528D466EDE35BDF894555D4 /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests-umbrella.h */,
+				D44EA9CBDEED639C465CEC8854CECDD8 /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests.debug.xcconfig */,
+				EB5EA68DC3EF0286E7E7414D7CF3F15C /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests.release.xcconfig */,
+			);
+			name = "Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests";
+			path = "Target Support Files/Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests";
+			sourceTree = "<group>";
+		};
+		27ADD4A2AEBE22A2FF6D978F65D67A44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79E12E7D683A4E38ACD167470505623E /* Pods_HOTELLOTTEFMS.framework */,
+				4B1B1E4D585F4F0A8C82953B57156108 /* Pods_HOTELLOTTEFMS_HOTELLOTTEFMSUITests.framework */,
+				7206E0DA18335B6A64FD8572D1F418C8 /* Pods_HOTELLOTTEFMSTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78253B5F4A4982162E5B59C151654EDA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADD92FB2088DB17C1F32DBBC7A7FFE60 /* Pods-HOTELLOTTEFMS */,
+				0B175DCD8C3D480B15B24162CBEC07DD /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests */,
+				AE2BD2AFE6B877DDF5D4330ED4DE4AE6 /* Pods-HOTELLOTTEFMSTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		ADD92FB2088DB17C1F32DBBC7A7FFE60 /* Pods-HOTELLOTTEFMS */ = {
+			isa = PBXGroup;
+			children = (
+				1585563C008F4B5F6603681EA71F351E /* Pods-HOTELLOTTEFMS.modulemap */,
+				FE97F63D8CA5152F7051A71CEBC4BBC4 /* Pods-HOTELLOTTEFMS-acknowledgements.markdown */,
+				77D47FC31059FF100389EA098855B2F7 /* Pods-HOTELLOTTEFMS-acknowledgements.plist */,
+				54791E979F4A17A27030209DA825C441 /* Pods-HOTELLOTTEFMS-dummy.m */,
+				E4F105B450550B236AA2D9AB3732D8DF /* Pods-HOTELLOTTEFMS-Info.plist */,
+				38277BDAFAAEDE7CB4B2C96B0F7BCFBF /* Pods-HOTELLOTTEFMS-umbrella.h */,
+				7C353253D917E809B485F28B5AC19BEE /* Pods-HOTELLOTTEFMS.debug.xcconfig */,
+				6CE400B69B86E5600B7A213F171FB6E9 /* Pods-HOTELLOTTEFMS.release.xcconfig */,
+			);
+			name = "Pods-HOTELLOTTEFMS";
+			path = "Target Support Files/Pods-HOTELLOTTEFMS";
+			sourceTree = "<group>";
+		};
+		AE2BD2AFE6B877DDF5D4330ED4DE4AE6 /* Pods-HOTELLOTTEFMSTests */ = {
+			isa = PBXGroup;
+			children = (
+				89896D0458AAF7302D57A9E5C897E55A /* Pods-HOTELLOTTEFMSTests.modulemap */,
+				A6122D27F605504F35BD426335C50C4A /* Pods-HOTELLOTTEFMSTests-acknowledgements.markdown */,
+				06F3AAEFECD1931A556911A5E874AAB6 /* Pods-HOTELLOTTEFMSTests-acknowledgements.plist */,
+				2A878468746919EA5B570A54C08ABA11 /* Pods-HOTELLOTTEFMSTests-dummy.m */,
+				CBDA86BFAFE1579DF9D349FF133AD7A4 /* Pods-HOTELLOTTEFMSTests-Info.plist */,
+				1AAA3FFF27612FEE6B8A26ECD3F9181F /* Pods-HOTELLOTTEFMSTests-umbrella.h */,
+				DC6CAD3A8DB4AC89E925F1F13F84E193 /* Pods-HOTELLOTTEFMSTests.debug.xcconfig */,
+				F945996BB8DAE25DFC73B1BED76A3EC1 /* Pods-HOTELLOTTEFMSTests.release.xcconfig */,
+			);
+			name = "Pods-HOTELLOTTEFMSTests";
+			path = "Target Support Files/Pods-HOTELLOTTEFMSTests";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				27ADD4A2AEBE22A2FF6D978F65D67A44 /* Products */,
+				78253B5F4A4982162E5B59C151654EDA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0E83E726E5BA85F6A0EC5562E19A2314 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FD66AC5D7CE654AD286E96811878DA4 /* Pods-HOTELLOTTEFMSTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C51B0F24385E441F104539A6A87A8DF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C70B43295852F4F48AA07407DE54B885 /* Pods-HOTELLOTTEFMS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E04AF7D7E72A99B5055F3598800F407D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34C3868D8C2424EACABBBA9AA8DCCF18 /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		12877F0A22A0A57BD72D9C84B3A7A665 /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F7A9BC04EC79FE85DD3FC8380758A45 /* Build configuration list for PBXNativeTarget "Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests" */;
+			buildPhases = (
+				E04AF7D7E72A99B5055F3598800F407D /* Headers */,
+				4D68ECC9C581F63586E70BA3B49FB606 /* Sources */,
+				714368FA943A68E290CDFE2EFC358F04 /* Frameworks */,
+				3D949745AC9D5FE23EA6151EC8B45395 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests";
+			productName = "Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests";
+			productReference = 4B1B1E4D585F4F0A8C82953B57156108 /* Pods_HOTELLOTTEFMS_HOTELLOTTEFMSUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EF1182FC5F422725687B1D2ECC26BA33 /* Pods-HOTELLOTTEFMSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1674974E9AE4FE17CA58400BF75FF6D2 /* Build configuration list for PBXNativeTarget "Pods-HOTELLOTTEFMSTests" */;
+			buildPhases = (
+				0E83E726E5BA85F6A0EC5562E19A2314 /* Headers */,
+				49643A81041888389E129E9E21D87B40 /* Sources */,
+				0B866F3C419283402E948ADC44F191F8 /* Frameworks */,
+				EDBF60A0BFB9C198EB9BAF05DB231294 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5B2DD21C5A032EA481DB9333E6C243A /* PBXTargetDependency */,
+			);
+			name = "Pods-HOTELLOTTEFMSTests";
+			productName = "Pods-HOTELLOTTEFMSTests";
+			productReference = 7206E0DA18335B6A64FD8572D1F418C8 /* Pods_HOTELLOTTEFMSTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FCFE6840FAE1F585C3602F85C5C43622 /* Pods-HOTELLOTTEFMS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD05845C3436853B7840E7176A60B997 /* Build configuration list for PBXNativeTarget "Pods-HOTELLOTTEFMS" */;
+			buildPhases = (
+				7C51B0F24385E441F104539A6A87A8DF /* Headers */,
+				12587A0F61BF5CCEB7E33BA076CF1C83 /* Sources */,
+				9BCFC16D1E3C9756BF56975E7134F9B3 /* Frameworks */,
+				18DE341925CC9F12588143B63E0E5DB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HOTELLOTTEFMS";
+			productName = "Pods-HOTELLOTTEFMS";
+			productReference = 79E12E7D683A4E38ACD167470505623E /* Pods_HOTELLOTTEFMS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 27ADD4A2AEBE22A2FF6D978F65D67A44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCFE6840FAE1F585C3602F85C5C43622 /* Pods-HOTELLOTTEFMS */,
+				12877F0A22A0A57BD72D9C84B3A7A665 /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests */,
+				EF1182FC5F422725687B1D2ECC26BA33 /* Pods-HOTELLOTTEFMSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18DE341925CC9F12588143B63E0E5DB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D949745AC9D5FE23EA6151EC8B45395 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDBF60A0BFB9C198EB9BAF05DB231294 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12587A0F61BF5CCEB7E33BA076CF1C83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4289D215BA377D217356C1D059AA54 /* Pods-HOTELLOTTEFMS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49643A81041888389E129E9E21D87B40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41E13BABD59B49BBF16AEEBA6B6ADE16 /* Pods-HOTELLOTTEFMSTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D68ECC9C581F63586E70BA3B49FB606 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85D609234711BAFD595C2D08AC904D74 /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5B2DD21C5A032EA481DB9333E6C243A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HOTELLOTTEFMS";
+			target = FCFE6840FAE1F585C3602F85C5C43622 /* Pods-HOTELLOTTEFMS */;
+			targetProxy = F7E93E128B625E10128E520DC4C3F3F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		17248636EBFBCD5EABA27EFE45AC8A00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CE400B69B86E5600B7A213F171FB6E9 /* Pods-HOTELLOTTEFMS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HOTELLOTTEFMS/Pods-HOTELLOTTEFMS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HOTELLOTTEFMS/Pods-HOTELLOTTEFMS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		24D53871C9483C6552CB92F5CC3DF84B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F945996BB8DAE25DFC73B1BED76A3EC1 /* Pods-HOTELLOTTEFMSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HOTELLOTTEFMSTests/Pods-HOTELLOTTEFMSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HOTELLOTTEFMSTests/Pods-HOTELLOTTEFMSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6DBFC67C741FD9D446FF33C28FDD5A0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C353253D917E809B485F28B5AC19BEE /* Pods-HOTELLOTTEFMS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HOTELLOTTEFMS/Pods-HOTELLOTTEFMS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HOTELLOTTEFMS/Pods-HOTELLOTTEFMS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A27713CB74E99AF202AADC23200A32F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C708E97777AB078693D705530EB740B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC6CAD3A8DB4AC89E925F1F13F84E193 /* Pods-HOTELLOTTEFMSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HOTELLOTTEFMSTests/Pods-HOTELLOTTEFMSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HOTELLOTTEFMSTests/Pods-HOTELLOTTEFMSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CCFC8E42F18555BCA686128A782C8BA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D44EA9CBDEED639C465CEC8854CECDD8 /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests/Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests/Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EFAED78CA9A250305235F1375008BFBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB5EA68DC3EF0286E7E7414D7CF3F15C /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests/Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests/Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1674974E9AE4FE17CA58400BF75FF6D2 /* Build configuration list for PBXNativeTarget "Pods-HOTELLOTTEFMSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C708E97777AB078693D705530EB740B5 /* Debug */,
+				24D53871C9483C6552CB92F5CC3DF84B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F7A9BC04EC79FE85DD3FC8380758A45 /* Build configuration list for PBXNativeTarget "Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCFC8E42F18555BCA686128A782C8BA3 /* Debug */,
+				EFAED78CA9A250305235F1375008BFBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */,
+				A27713CB74E99AF202AADC23200A32F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD05845C3436853B7840E7176A60B997 /* Build configuration list for PBXNativeTarget "Pods-HOTELLOTTEFMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DBFC67C741FD9D446FF33C28FDD5A0B /* Debug */,
+				17248636EBFBCD5EABA27EFE45AC8A00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
