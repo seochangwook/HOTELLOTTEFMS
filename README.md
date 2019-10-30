@@ -37,6 +37,7 @@ Representing development progress as in progress / completed.
 | ------ | ------ | ------ |
 | Initial creation of project (Xcode) | completed | scw |
 | Project Name fix | completed | scw |
+| Pods Apply | completed | scw |
 
 ### Library
 
@@ -44,6 +45,7 @@ List of libraries used when developing FMS iOS apps.
 
 | Library | Site |
 | ------ | ------ |
+| Pod | https://cocoapods.org/ |
 
 
 License
