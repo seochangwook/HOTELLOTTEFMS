@@ -13,6 +13,7 @@ class SettingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.modalPresentationStyle = .fullScreen
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -23,13 +24,16 @@ class SettingViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    ///Move
+    
+     ///Move (iOS 13 Response - Modality changes (FullScreen))
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         var segue_id : String = segue.identifier!
     
         if(segue_id == "setting_mainwebview"){
+            let destination = segue.destination as! MainWebViewController
             
+            destination.modalPresentationStyle = .fullScreen
         }
     }
     

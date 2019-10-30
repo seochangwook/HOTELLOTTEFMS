@@ -33,15 +33,19 @@ class LoadingViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-     ///Move
+     ///Move (iOS 13 Response - Modality changes (FullScreen))
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         var segue_id : String = segue.identifier!
     
         if(segue_id == "loading_mainwebview"){
+            let destination = segue.destination as! MainWebViewController
             
+            destination.modalPresentationStyle = .fullScreen
         } else if(segue_id == "loading_setting"){
+            let destination = segue.destination as! SettingViewController
             
+            destination.modalPresentationStyle = .fullScreen
         }
     }
     
