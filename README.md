@@ -31,6 +31,7 @@ Representing development progress as in progress / completed.
 | Development work | Progress | Committer |
 | ------ | ------ | ------ |
 | Initial creation of project (Xcode) | completed | scw |
+| Project Name fix | completed | scw |
 
 ### Library
 
