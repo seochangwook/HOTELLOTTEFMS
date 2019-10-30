@@ -45,7 +45,7 @@ List of libraries used when developing FMS iOS apps.
 
 | Library | Site |
 | ------ | ------ |
-| Pod | https://cocoapods.org/ |
+| Cocoapods | https://cocoapods.org/ |
 
 
 License
