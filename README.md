@@ -38,6 +38,8 @@ Representing development progress as in progress / completed.
 | Initial creation of project (Xcode) | completed | scw |
 | Project Name fix | completed | scw |
 | Pods Apply | completed | scw |
+| iOS 13 Response - Modality Changes | completed | scw |
+| Privacy - Camera, Photo Album Access | completed | scw |
 
 ### Library
 
