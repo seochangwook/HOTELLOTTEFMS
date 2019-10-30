@@ -23,6 +23,8 @@ Hotel Lotte facility management system maximizes asset value by standardizing wo
 * Hybrid iOS App on AWS Infrastructure.
 * Swift language-based iOS app
 * Spring Framework - Back end
+* CocoaPods based
+* Google FCM
 
 ### Development progress (Based on current date)
 
