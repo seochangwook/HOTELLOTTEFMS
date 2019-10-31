@@ -40,6 +40,7 @@ Representing development progress as in progress / completed.
 | Pods Apply | completed | scw |
 | iOS 13 Response - Modality Changes | completed | scw |
 | Privacy - Camera, Photo Album Access | completed | scw |
+| Statusbar Hide | completed | scw |
 
 ### Library
 
