@@ -8,8 +8,19 @@
 
 import UIKit
 
-class SettingViewController: UIViewController {
-
+class SettingViewController: UIViewController, UITextFieldDelegate {
+    @IBOutlet weak var ip_textfield: UITextField! {
+        didSet{
+            ip_textfield.delegate = self
+        }
+    }
+    
+    @IBOutlet weak var port_textfield: UITextField! {
+        didSet{
+            port_textfield.delegate = self
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,7 +48,25 @@ class SettingViewController: UIViewController {
         }
     }
     
+    ///Textfield Delegate Method
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
+    ///Textfield Registration
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        ip_textfield.resignFirstResponder()
+        port_textfield.resignFirstResponder()
+        
+        return true
+    }
+    
     @IBAction func savebutton(_ sender: UIButton) {
-        performSegue(withIdentifier: "setting_mainwebview", sender: self)
+        print("Check Info and Save Info")
+        ///1. IP, Port Validation Check
+        
+        
+        ///2. UserDefaults 저장
+        
     }
 }
