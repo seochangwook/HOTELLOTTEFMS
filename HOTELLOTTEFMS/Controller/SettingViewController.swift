@@ -29,7 +29,6 @@ class SettingViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -64,9 +63,48 @@ class SettingViewController: UIViewController, UITextFieldDelegate {
     @IBAction func savebutton(_ sender: UIButton) {
         print("Check Info and Save Info")
         ///1. IP, Port Validation Check
+        var ip_textfield_text : String = ip_textfield.text!
+        var port_textfiled_text : String = port_textfield.text!
         
+        if(ip_textfield_text.isEmpty || port_textfiled_text.isEmpty || isIPv4(ip_textfield_text) == false){
+            print("not valid")
+        } else{
+            ///2. UserDefaults 저장
+            
+        }
+    }
+    
+    func isIPv4(_ IP: String) -> Bool {
+        let items = IP.components(separatedBy: ".")
         
-        ///2. UserDefaults 저장
+        if(items.count != 4) {
+            return false
+        }
         
+        for item in items {
+            var tmp = 0
+            
+            if(item.count > 3 || item.count < 1){
+                return false
+            }
+            
+            for char in item{
+                if(char < "0" || char > "9"){
+                    return false
+                }
+                
+                tmp = tmp * 10 + Int(String(char))!
+            }
+            
+            if(tmp < 0 || tmp > 255){
+                return false
+            }
+            
+            if((tmp > 0 && item.first == "0") || (tmp == 0 && item.count > 1)){
+                return false
+            }
+        }
+        
+        return true
     }
 }
