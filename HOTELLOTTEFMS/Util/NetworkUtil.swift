@@ -10,7 +10,7 @@ import Foundation
 import SystemConfiguration
 
 
-public class Reachability{
+public class NetworkUtil{
     class func isConnectedToNetwork() -> Bool{
         var zeroAddress = sockaddr_in(sin_len: 0, sin_family: 0, sin_port: 0, sin_addr: in_addr(s_addr: 0), sin_zero: (0,0,0,0,0,0,0,0))
         zeroAddress.sin_len = UInt8(MemoryLayout.size(ofValue: zeroAddress))
@@ -34,5 +34,39 @@ public class Reachability{
         let ret = (isReachable && !needsConnection)
         
         return ret
+    }
+    
+    class func isIPv4(_ IP: String) -> Bool {
+        let items = IP.components(separatedBy: ".")
+        
+        if(items.count != 4) {
+            return false
+        }
+        
+        for item in items {
+            var tmp = 0
+            
+            if(item.count > 3 || item.count < 1){
+                return false
+            }
+            
+            for char in item{
+                if(char < "0" || char > "9"){
+                    return false
+                }
+                
+                tmp = tmp * 10 + Int(String(char))!
+            }
+            
+            if(tmp < 0 || tmp > 255){
+                return false
+            }
+            
+            if((tmp > 0 && item.first == "0") || (tmp == 0 && item.count > 1)){
+                return false
+            }
+        }
+        
+        return true
     }
 }

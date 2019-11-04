@@ -21,6 +21,10 @@ class SettingViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    @IBAction func savebutton(_ sender: UIButton) {
+        ///Call shouldPerformSegue
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,7 +39,38 @@ class SettingViewController: UIViewController, UITextFieldDelegate {
         super.didReceiveMemoryWarning()
     }
     
-     ///Move (iOS 13 Response - Modality changes (FullScreen))
+     ///Conditional Segue
+    override func shouldPerformSegue(withIdentifier identifier: String?, sender: Any?) -> Bool {
+        if let ident = identifier {
+            if ident == "setting_mainwebview" {
+                ///1. IP, Port Validation Check
+                let ip_textfield_text : String = ip_textfield.text!
+                let port_textfiled_text : String = port_textfield.text!
+                
+                if(ip_textfield_text.isEmpty || port_textfiled_text.isEmpty || NetworkUtil.isIPv4(ip_textfield_text) == false){
+                    let networkCheckAlert = UIAlertController(title: "HOTEL FMS", message: "입력정보가 올바르지 않습니다. IP, PORT정보를 다시 확인해주세요", preferredStyle: UIAlertController.Style.alert)
+                    
+                    networkCheckAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+                    }))
+                    
+                    self.present(networkCheckAlert, animated: true, completion: nil)
+                    
+                    return false
+                } else{
+                    ///2. UserDefaults 저장
+                    print("UserDefaults save")
+                    
+                    
+                    
+                    performSegue(withIdentifier: "setting_mainwebview", sender: self)
+                }
+            }
+        }
+        
+        return true
+    }
+    
+    ///Move (iOS 13 Response - Modality changes (FullScreen))
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         var segue_id : String = segue.identifier!
@@ -56,54 +91,6 @@ class SettingViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         ip_textfield.resignFirstResponder()
         port_textfield.resignFirstResponder()
-        
-        return true
-    }
-    
-    @IBAction func savebutton(_ sender: UIButton) {
-        print("Check Info and Save Info")
-        ///1. IP, Port Validation Check
-        var ip_textfield_text : String = ip_textfield.text!
-        var port_textfiled_text : String = port_textfield.text!
-        
-        if(ip_textfield_text.isEmpty || port_textfiled_text.isEmpty || isIPv4(ip_textfield_text) == false){
-            print("not valid")
-        } else{
-            ///2. UserDefaults 저장
-            
-        }
-    }
-    
-    func isIPv4(_ IP: String) -> Bool {
-        let items = IP.components(separatedBy: ".")
-        
-        if(items.count != 4) {
-            return false
-        }
-        
-        for item in items {
-            var tmp = 0
-            
-            if(item.count > 3 || item.count < 1){
-                return false
-            }
-            
-            for char in item{
-                if(char < "0" || char > "9"){
-                    return false
-                }
-                
-                tmp = tmp * 10 + Int(String(char))!
-            }
-            
-            if(tmp < 0 || tmp > 255){
-                return false
-            }
-            
-            if((tmp > 0 && item.first == "0") || (tmp == 0 && item.count > 1)){
-                return false
-            }
-        }
         
         return true
     }

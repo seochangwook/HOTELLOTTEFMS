@@ -50,7 +50,7 @@ class LoadingViewController: UIViewController {
     }
     
     func checkNetworkConnect(){
-        if Reachability.isConnectedToNetwork(){
+        if NetworkUtil.isConnectedToNetwork(){
             ///TODO : Network Connect Success Process
             
         } else{
