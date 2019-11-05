@@ -19,6 +19,7 @@
 		62955E1C2366DDB900177E15 /* MainWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62955E1B2366DDB900177E15 /* MainWebViewController.swift */; };
 		62955E1E2366DEAD00177E15 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62955E1D2366DEAD00177E15 /* SettingViewController.swift */; };
 		62955E212366E7A700177E15 /* NetworkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62955E202366E7A700177E15 /* NetworkUtil.swift */; };
+		62D740992371699A00EA19C2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D740982371699A00EA19C2 /* WebKit.framework */; };
 		88B721DEFD2C7AC0A79A5B30 /* Pods_HOTELLOTTEFMS_HOTELLOTTEFMSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF2CE02BCBEED0EE57884B5 /* Pods_HOTELLOTTEFMS_HOTELLOTTEFMSUITests.framework */; };
 		B2A1AE44498DAF26031A8B33 /* Pods_HOTELLOTTEFMSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA48CAC77DF9E706895E3E5 /* Pods_HOTELLOTTEFMSTests.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,7 @@
 		62955E1B2366DDB900177E15 /* MainWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWebViewController.swift; sourceTree = "<group>"; };
 		62955E1D2366DEAD00177E15 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		62955E202366E7A700177E15 /* NetworkUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtil.swift; sourceTree = "<group>"; };
+		62D740982371699A00EA19C2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		821894A49F00FC928E2DDD70 /* Pods-HOTELLOTTEFMS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOTELLOTTEFMS.release.xcconfig"; path = "Target Support Files/Pods-HOTELLOTTEFMS/Pods-HOTELLOTTEFMS.release.xcconfig"; sourceTree = "<group>"; };
 		872F0F683C3E55087557980E /* Pods_HOTELLOTTEFMS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HOTELLOTTEFMS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF2CE02BCBEED0EE57884B5 /* Pods_HOTELLOTTEFMS_HOTELLOTTEFMSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HOTELLOTTEFMS_HOTELLOTTEFMSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62D740992371699A00EA19C2 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +103,7 @@
 		61DA82C754ADFB4FBAFB6475 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				62D740982371699A00EA19C2 /* WebKit.framework */,
 				872F0F683C3E55087557980E /* Pods_HOTELLOTTEFMS.framework */,
 				AFF2CE02BCBEED0EE57884B5 /* Pods_HOTELLOTTEFMS_HOTELLOTTEFMSUITests.framework */,
 				DAA48CAC77DF9E706895E3E5 /* Pods_HOTELLOTTEFMSTests.framework */,

@@ -26,14 +26,14 @@ class LoadingViewController: UIViewController {
         
         let defaults = UserDefaults.standard
 
-        if let ip = defaults.string(forKey: "ip") {
-            print("ip: ", ip)
+        if let getIp = defaults.string(forKey: "ip") {
+            print("ip: ", getIp)
         } else{
             settingviewcode = 2
         }
         
-        if let port = defaults.string(forKey: "port") {
-            print("port: ", port)
+        if let getPort = defaults.string(forKey: "port") {
+            print("port: ", getPort)
         } else{
             settingviewcode = 2
         }
