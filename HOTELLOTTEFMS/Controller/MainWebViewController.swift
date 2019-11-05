@@ -12,12 +12,10 @@ class MainWebViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        
     }
     
     override func didReceiveMemoryWarning() {

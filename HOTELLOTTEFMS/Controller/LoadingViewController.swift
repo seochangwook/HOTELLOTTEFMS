@@ -18,9 +18,25 @@ class LoadingViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
-         checkNetworkConnect()
+        ///Check Network Connection
+        checkNetworkConnect()
         
-        var settingviewcode = 2
+        ///UserDefaults value get check
+        var settingviewcode : Int = 1
+        
+        let defaults = UserDefaults.standard
+
+        if let ip = defaults.string(forKey: "ip") {
+            print("ip: ", ip)
+        } else{
+            settingviewcode = 2
+        }
+        
+        if let port = defaults.string(forKey: "port") {
+            print("port: ", port)
+        } else{
+            settingviewcode = 2
+        }
                
         if(settingviewcode == 1){
             performSegue(withIdentifier: "loading_mainwebview", sender: self)
@@ -55,10 +71,10 @@ class LoadingViewController: UIViewController {
             
         } else{
              ///TODO : Network Not Connect Success Process
-            let networkCheckAlert = UIAlertController(title: "Network Connect ERROR", message: "앱을 종료합니다.(네트워크를 연결해주세요)", preferredStyle: UIAlertController.Style.alert)
+            let networkCheckAlert = UIAlertController(title: "HOTEL FMS", message: "앱을 종료합니다.(네트워크를 연결해주세요)", preferredStyle: UIAlertController.Style.alert)
             
             networkCheckAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
-                print("App exit")
+                print("App exit - Network Connection ERROR")
                 
                 exit(0)
             }))

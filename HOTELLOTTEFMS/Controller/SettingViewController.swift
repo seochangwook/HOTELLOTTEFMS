@@ -48,19 +48,20 @@ class SettingViewController: UIViewController, UITextFieldDelegate {
                 let port_textfiled_text : String = port_textfield.text!
                 
                 if(ip_textfield_text.isEmpty || port_textfiled_text.isEmpty || NetworkUtil.isIPv4(ip_textfield_text) == false){
-                    let networkCheckAlert = UIAlertController(title: "HOTEL FMS", message: "입력정보가 올바르지 않습니다. IP, PORT정보를 다시 확인해주세요", preferredStyle: UIAlertController.Style.alert)
+                    let inputCheckAlert = UIAlertController(title: "HOTEL FMS", message: "입력정보가 올바르지 않습니다. IP, PORT정보를 다시 입력해주세요", preferredStyle: UIAlertController.Style.alert)
                     
-                    networkCheckAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+                    inputCheckAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                     }))
                     
-                    self.present(networkCheckAlert, animated: true, completion: nil)
+                    self.present(inputCheckAlert, animated: true, completion: nil)
                     
                     return false
                 } else{
-                    ///2. UserDefaults 저장
-                    print("UserDefaults save")
+                    ///2. IP, PORT UserDefaults 저장
+                    let defaults = UserDefaults.standard
                     
-                    
+                    defaults.set(ip_textfield_text, forKey: "ip")
+                    defaults.set(port_textfiled_text, forKey: "port")
                     
                     performSegue(withIdentifier: "setting_mainwebview", sender: self)
                 }
