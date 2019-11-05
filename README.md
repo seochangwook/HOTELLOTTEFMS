@@ -42,6 +42,7 @@ Representing development progress as in progress / completed.
 | Privacy - Camera, Photo Album Access | completed | scw |
 | Statusbar Hide | completed | scw |
 | UserDefaults add | completed | scw |
+| WebKit Framework add | completed | scw |
 
 ### Library
 
@@ -51,6 +52,7 @@ List of libraries used when developing FMS iOS apps.
 | ------ | ------ |
 | Cocoapods | https://cocoapods.org/ |
 | UserDefaults | https://developer.apple.com/documentation/foundation/userdefaults |
+| WKWebView | https://developer.apple.com/documentation/webkit/wkwebview |
 
 License
 ----
