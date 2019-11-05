@@ -41,6 +41,7 @@ Representing development progress as in progress / completed.
 | iOS 13 Response - Modality Changes | completed | scw |
 | Privacy - Camera, Photo Album Access | completed | scw |
 | Statusbar Hide | completed | scw |
+| UserDefaults add | completed | scw |
 
 ### Library
 
@@ -49,7 +50,7 @@ List of libraries used when developing FMS iOS apps.
 | Library | Site |
 | ------ | ------ |
 | Cocoapods | https://cocoapods.org/ |
-
+| UserDefaults | https://developer.apple.com/documentation/foundation/userdefaults |
 
 License
 ----
