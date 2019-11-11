@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,27 +16,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="njD-V4-Osw">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="njD-V4-Osw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qJe-Tf-2pM">
-                                <rect key="frame" x="0.0" y="603" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qJe-Tf-2pM">
+                                <rect key="frame" x="0.0" y="243" width="38" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <barButtonItem title="&lt;-" image="arrowshape.turn.up.left" catalog="system" id="d9S-db-yTJ"/>
                                     <barButtonItem width="290" style="plain" systemItem="fixedSpace" id="EuH-dp-4Ez"/>
-                                    <barButtonItem title="Home" image="house" catalog="system" id="Tfo-DH-Rnc"/>
                                 </items>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="njD-V4-Osw" firstAttribute="trailing" secondItem="oY8-Q1-Rw0" secondAttribute="trailing" id="0nD-0P-ZaX"/>
+                            <constraint firstItem="qJe-Tf-2pM" firstAttribute="top" secondItem="njD-V4-Osw" secondAttribute="bottom" id="5nO-3g-Lcz"/>
+                            <constraint firstItem="qJe-Tf-2pM" firstAttribute="bottom" secondItem="oY8-Q1-Rw0" secondAttribute="bottom" id="HCl-5h-bq7"/>
+                            <constraint firstItem="qJe-Tf-2pM" firstAttribute="top" secondItem="njD-V4-Osw" secondAttribute="bottom" id="KNi-vB-sao"/>
+                            <constraint firstItem="njD-V4-Osw" firstAttribute="top" secondItem="oY8-Q1-Rw0" secondAttribute="top" id="XJ1-AP-J0k"/>
+                            <constraint firstItem="qJe-Tf-2pM" firstAttribute="leading" secondItem="oY8-Q1-Rw0" secondAttribute="leading" id="a6j-JU-Y2w"/>
+                            <constraint firstItem="njD-V4-Osw" firstAttribute="leading" secondItem="oY8-Q1-Rw0" secondAttribute="leading" id="gEr-rk-peo"/>
+                            <constraint firstItem="qJe-Tf-2pM" firstAttribute="trailing" secondItem="oY8-Q1-Rw0" secondAttribute="trailing" id="jTe-p4-F1j"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="oY8-Q1-Rw0"/>
                     </view>
                     <connections>
@@ -145,7 +152,6 @@
                             <constraint firstItem="1PQ-qK-dBm" firstAttribute="top" secondItem="AwU-97-XQ2" secondAttribute="bottom" constant="20" id="Zeg-kL-Tg2"/>
                             <constraint firstItem="AwU-97-XQ2" firstAttribute="trailing" secondItem="rQb-nM-SJ6" secondAttribute="trailing" id="ca0-YO-Ubi"/>
                             <constraint firstItem="lue-qa-fhO" firstAttribute="leading" secondItem="rQb-nM-SJ6" secondAttribute="leading" constant="20" id="fLg-xs-eoY"/>
-                            <constraint firstItem="1PQ-qK-dBm" firstAttribute="top" secondItem="AwU-97-XQ2" secondAttribute="bottom" constant="20" id="kiJ-gz-FxI"/>
                             <constraint firstItem="rQb-nM-SJ6" firstAttribute="trailing" secondItem="cBL-fU-Nfv" secondAttribute="trailing" constant="16" id="pB1-32-INc"/>
                             <constraint firstItem="NIX-Xr-H8Q" firstAttribute="leading" secondItem="rQb-nM-SJ6" secondAttribute="leading" constant="16" id="qo3-ca-m0m"/>
                             <constraint firstItem="rQb-nM-SJ6" firstAttribute="trailing" secondItem="NIX-Xr-H8Q" secondAttribute="trailing" constant="16" id="rPq-bE-YbC"/>
@@ -172,7 +178,6 @@
     </scenes>
     <resources>
         <image name="arrowshape.turn.up.left" catalog="system" width="64" height="52"/>
-        <image name="house" catalog="system" width="64" height="54"/>
         <image name="splashimage.png" width="250" height="428"/>
     </resources>
     <inferredMetricsTieBreakers>

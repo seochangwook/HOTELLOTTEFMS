@@ -33,8 +33,6 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
     func initWebview_then_callFromJs(){
         ///JavaScript Call Setting
         
-        
-        webView = WKWebView(frame: CGRect.init(x: 0, y: 0, width: 375, height: 603))
     }
     
     func loadUrl(){
@@ -65,7 +63,7 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
     
     ///WKUIDelegate 3가지 필수 Callback 함수
     func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
-        let alertController = UIAlertController(title: "", message: message, preferredStyle: .alert)
+        let alertController = UIAlertController(title: "HOTEL FMS", message: message, preferredStyle: .alert)
         
         alertController.addAction(UIAlertAction(title: "확인", style: .default, handler: {(action) in
             completionHandler()
@@ -76,7 +74,7 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
     
     
     func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Void) {
-        let alertController = UIAlertController(title: "", message: message, preferredStyle: .alert)
+        let alertController = UIAlertController(title: "HOTEL FMS", message: message, preferredStyle: .alert)
         
         alertController.addAction(UIAlertAction(title: "확인", style: .default, handler: { (action) in
             completionHandler(true)
@@ -90,7 +88,7 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
     }
     
     func webView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (String?) -> Void) {
-        let alertController = UIAlertController(title: "", message: prompt, preferredStyle: .alert)
+        let alertController = UIAlertController(title: "HOTEL FMS", message: prompt, preferredStyle: .alert)
         
         alertController.addTextField { (textField) in
             textField.text = defaultText
