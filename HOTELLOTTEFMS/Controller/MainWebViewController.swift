@@ -9,14 +9,11 @@
 import UIKit
 import WebKit
 
-class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
+class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegate, WKScriptMessageHandler {
     @IBOutlet weak var webView: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        ///JavaScript Call Setting
-        initWebview_then_callFromJs()
         
         ///Load URL
         loadUrl()
@@ -24,6 +21,9 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
+        
+        ///JavaScript Call Setting
+        //initWebview_then_callFromJs()
     }
     
     override func didReceiveMemoryWarning() {
@@ -32,7 +32,15 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
     
     func initWebview_then_callFromJs(){
         ///JavaScript Call Setting
+        let contentController = WKUserContentController()
+        let config = WKWebViewConfiguration()
         
+        ///ContentController 추가 (관리 Point JavaScript 함수 추가
+        contentController.add(self, name : "setting")
+        
+        config.userContentController = contentController
+        
+        webView = WKWebView(frame: self.webView.frame, configuration: config)
     }
     
     func loadUrl(){
@@ -59,6 +67,13 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
         
         webView.uiDelegate = self
         webView.navigationDelegate = self
+    }
+    
+    /// WKScriptMessageHandler Callback (Javascript -> Native Call (Param))
+    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        if(message.name == "setting"){
+            print("call setting")
+        }
     }
     
     ///WKUIDelegate 3가지 필수 Callback 함수

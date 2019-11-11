@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,24 +25,22 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qJe-Tf-2pM">
-                                <rect key="frame" x="0.0" y="243" width="38" height="44"/>
+                                <rect key="frame" x="0.0" y="603" width="375" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <barButtonItem title="&lt;-" image="arrowshape.turn.up.left" catalog="system" id="d9S-db-yTJ"/>
-                                    <barButtonItem width="290" style="plain" systemItem="fixedSpace" id="EuH-dp-4Ez"/>
                                 </items>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="njD-V4-Osw" firstAttribute="trailing" secondItem="oY8-Q1-Rw0" secondAttribute="trailing" id="0nD-0P-ZaX"/>
-                            <constraint firstItem="qJe-Tf-2pM" firstAttribute="top" secondItem="njD-V4-Osw" secondAttribute="bottom" id="5nO-3g-Lcz"/>
                             <constraint firstItem="qJe-Tf-2pM" firstAttribute="bottom" secondItem="oY8-Q1-Rw0" secondAttribute="bottom" id="HCl-5h-bq7"/>
-                            <constraint firstItem="qJe-Tf-2pM" firstAttribute="top" secondItem="njD-V4-Osw" secondAttribute="bottom" id="KNi-vB-sao"/>
                             <constraint firstItem="njD-V4-Osw" firstAttribute="top" secondItem="oY8-Q1-Rw0" secondAttribute="top" id="XJ1-AP-J0k"/>
                             <constraint firstItem="qJe-Tf-2pM" firstAttribute="leading" secondItem="oY8-Q1-Rw0" secondAttribute="leading" id="a6j-JU-Y2w"/>
                             <constraint firstItem="njD-V4-Osw" firstAttribute="leading" secondItem="oY8-Q1-Rw0" secondAttribute="leading" id="gEr-rk-peo"/>
                             <constraint firstItem="qJe-Tf-2pM" firstAttribute="trailing" secondItem="oY8-Q1-Rw0" secondAttribute="trailing" id="jTe-p4-F1j"/>
+                            <constraint firstItem="qJe-Tf-2pM" firstAttribute="top" secondItem="njD-V4-Osw" secondAttribute="bottom" id="vhw-2j-Kdc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oY8-Q1-Rw0"/>
                     </view>
@@ -181,6 +179,6 @@
         <image name="splashimage.png" width="250" height="428"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TJc-SJ-HoA"/>
+        <segue reference="PYO-7n-EC2"/>
     </inferredMetricsTieBreakers>
 </document>
