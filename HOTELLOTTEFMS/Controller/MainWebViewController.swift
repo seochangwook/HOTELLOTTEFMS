@@ -30,6 +30,42 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
         super.didReceiveMemoryWarning()
     }
     
+    @IBAction func back_button(_ sender: UIBarButtonItem) {
+        let convert_StringUrl : String = webView.url!.path
+        
+        if(webView.canGoBack){
+            if(convert_StringUrl.contains("/fms/fms_main")){
+                //FMS Main Page Back button click
+                let appExitAlert = UIAlertController(title: "HOTEL FMS", message: "앱을 종료하시겠습니까?", preferredStyle: UIAlertController.Style.alert)
+                
+                appExitAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+                    exit(0)
+                }))
+                
+                appExitAlert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action: UIAlertAction!) in
+                    
+                }))
+                
+                self.present(appExitAlert, animated: true, completion: nil)
+            } else{
+                webView.goBack()
+            }
+        } else{
+            ///Login Page Back button click
+            let appExitAlert = UIAlertController(title: "HOTEL FMS", message: "앱을 종료하시겠습니까?", preferredStyle: UIAlertController.Style.alert)
+            
+            appExitAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+                exit(0)
+            }))
+            
+            appExitAlert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action: UIAlertAction!) in
+                
+            }))
+            
+            self.present(appExitAlert, animated: true, completion: nil)
+        }
+    }
+    
     func initWebview_then_callFromJs(){
         ///JavaScript Call Setting
         let contentController = WKUserContentController()
@@ -40,7 +76,7 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
         
         config.userContentController = contentController
         
-        webView = WKWebView(frame: self.webView.frame, configuration: config)
+        webView = WKWebView(frame: webView.frame, configuration: config)
     }
     
     func loadUrl(){
