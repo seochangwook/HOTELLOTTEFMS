@@ -27,13 +27,11 @@ class LoadingViewController: UIViewController {
         let defaults = UserDefaults.standard
 
         if let getIp = defaults.string(forKey: "ip") {
-            print("ip: ", getIp)
         } else{
             settingviewcode = 2
         }
         
         if let getPort = defaults.string(forKey: "port") {
-            print("port: ", getPort)
         } else{
             settingviewcode = 2
         }
@@ -74,9 +72,7 @@ class LoadingViewController: UIViewController {
             let networkCheckAlert = UIAlertController(title: "HOTEL FMS", message: "앱을 종료합니다.(네트워크를 연결해주세요)", preferredStyle: UIAlertController.Style.alert)
             
             networkCheckAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
-                print("App exit - Network Connection ERROR")
-                
-                exit(0)
+                UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
             }))
             
             self.present(networkCheckAlert, animated: true, completion: nil)

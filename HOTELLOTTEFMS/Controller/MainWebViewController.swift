@@ -39,7 +39,9 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
                 let appExitAlert = UIAlertController(title: "HOTEL FMS", message: "앱을 종료하시겠습니까?", preferredStyle: UIAlertController.Style.alert)
                 
                 appExitAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
-                    exit(0)
+                    
+                    ///App exit is go home screen
+                    UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
                 }))
                 
                 appExitAlert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action: UIAlertAction!) in
@@ -55,7 +57,7 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
             let appExitAlert = UIAlertController(title: "HOTEL FMS", message: "앱을 종료하시겠습니까?", preferredStyle: UIAlertController.Style.alert)
             
             appExitAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
-                exit(0)
+                UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
             }))
             
             appExitAlert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action: UIAlertAction!) in
