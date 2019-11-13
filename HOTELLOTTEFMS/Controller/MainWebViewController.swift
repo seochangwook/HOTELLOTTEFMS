@@ -14,9 +14,6 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        ///WKWebView Setting (View and Delegating)
-        loadWKWebViewSetting()
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -24,6 +21,9 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
         
         ///JavaScript Call Setting
         initWKWebViewJS()
+        
+        ///WKWebView Setting (View and Delegating)
+        loadWKWebViewSetting()
     }
     
     override func didReceiveMemoryWarning() {
@@ -104,14 +104,14 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
         
         config.userContentController = contentController
         
-        ///Delegating and View Setting
-        webView = WKWebView(frame:self.view.bounds, configuration:config)
+        webView = WKWebView(frame:self.webView.frame, configuration:config)
     }
     
     /// WKScriptMessageHandler Callback (Javascript -> Native Call (Param))
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         if(message.name == "setting"){
             print("call setting")
+            print(message.body)
         }
     }
     
