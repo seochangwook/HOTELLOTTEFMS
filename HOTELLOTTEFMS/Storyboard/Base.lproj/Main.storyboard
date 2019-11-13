@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="NoD-p7-2oF" customClass="MainWebViewController" customModule="HOTELLOTTEFMS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zv0-Vk-o1v">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="njD-V4-Osw">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -25,7 +25,7 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qJe-Tf-2pM">
-                                <rect key="frame" x="0.0" y="603" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="759" width="414" height="49"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <barButtonItem title="&lt;" image="chevron.left" catalog="system" id="d9S-db-yTJ">
@@ -38,13 +38,13 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="njD-V4-Osw" firstAttribute="trailing" secondItem="oY8-Q1-Rw0" secondAttribute="trailing" id="0nD-0P-ZaX"/>
-                            <constraint firstItem="qJe-Tf-2pM" firstAttribute="bottom" secondItem="oY8-Q1-Rw0" secondAttribute="bottom" id="HCl-5h-bq7"/>
-                            <constraint firstItem="njD-V4-Osw" firstAttribute="top" secondItem="oY8-Q1-Rw0" secondAttribute="top" id="XJ1-AP-J0k"/>
-                            <constraint firstItem="qJe-Tf-2pM" firstAttribute="leading" secondItem="oY8-Q1-Rw0" secondAttribute="leading" id="a6j-JU-Y2w"/>
-                            <constraint firstItem="njD-V4-Osw" firstAttribute="leading" secondItem="oY8-Q1-Rw0" secondAttribute="leading" id="gEr-rk-peo"/>
-                            <constraint firstItem="qJe-Tf-2pM" firstAttribute="trailing" secondItem="oY8-Q1-Rw0" secondAttribute="trailing" id="jTe-p4-F1j"/>
-                            <constraint firstItem="qJe-Tf-2pM" firstAttribute="top" secondItem="njD-V4-Osw" secondAttribute="bottom" id="vhw-2j-Kdc"/>
+                            <constraint firstItem="qJe-Tf-2pM" firstAttribute="bottom" secondItem="oY8-Q1-Rw0" secondAttribute="bottom" id="6i5-Vj-BjN"/>
+                            <constraint firstItem="qJe-Tf-2pM" firstAttribute="leading" secondItem="oY8-Q1-Rw0" secondAttribute="leading" id="BOy-Zi-oFN"/>
+                            <constraint firstItem="qJe-Tf-2pM" firstAttribute="trailing" secondItem="oY8-Q1-Rw0" secondAttribute="trailing" id="FBs-p7-6I9"/>
+                            <constraint firstItem="njD-V4-Osw" firstAttribute="trailing" secondItem="oY8-Q1-Rw0" secondAttribute="trailing" id="NUa-CP-11W"/>
+                            <constraint firstItem="njD-V4-Osw" firstAttribute="leading" secondItem="oY8-Q1-Rw0" secondAttribute="leading" id="REc-hE-hh1"/>
+                            <constraint firstItem="qJe-Tf-2pM" firstAttribute="top" secondItem="njD-V4-Osw" secondAttribute="bottom" id="YB7-Lf-ELz"/>
+                            <constraint firstItem="njD-V4-Osw" firstAttribute="top" secondItem="oY8-Q1-Rw0" secondAttribute="top" id="asu-vV-c9E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oY8-Q1-Rw0"/>
                     </view>
@@ -61,11 +61,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoadingViewController" customModule="HOTELLOTTEFMS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashimage.png" translatesAutoresizingMaskIntoConstraints="NO" id="cYI-ox-wok">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -91,11 +91,11 @@
             <objects>
                 <viewController id="2Pu-ii-ruD" customClass="SettingViewController" customModule="HOTELLOTTEFMS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ebw-ei-q4d">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBL-fU-Nfv">
-                                <rect key="frame" x="16" y="594" width="343" height="33"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBL-fU-Nfv">
+                                <rect key="frame" x="16" y="755" width="382" height="33"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -106,29 +106,29 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서버 IP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1PQ-qK-dBm">
-                                <rect key="frame" x="16" y="76" width="109" height="21"/>
+                                <rect key="frame" x="16" y="76" width="148" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="포트번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lue-qa-fhO">
-                                <rect key="frame" x="20" y="171" width="59" height="21"/>
+                                <rect key="frame" x="20" y="171" width="98" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NIX-Xr-H8Q">
-                                <rect key="frame" x="16" y="117" width="343" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NIX-Xr-H8Q">
+                                <rect key="frame" x="16" y="117" width="382" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U0q-aE-dAT">
-                                <rect key="frame" x="16" y="212" width="343" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U0q-aE-dAT">
+                                <rect key="frame" x="16" y="212" width="382" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
-                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="AwU-97-XQ2">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                            <navigationBar contentMode="scaleToFill" verticalHuggingPriority="253" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="AwU-97-XQ2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="barTintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <textAttributes key="titleTextAttributes">

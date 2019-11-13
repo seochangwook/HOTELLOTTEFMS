@@ -15,15 +15,15 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ///Load URL
-        loadUrl()
+        ///WKWebView Setting (View and Delegating)
+        loadWKWebViewSetting()
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
         ///JavaScript Call Setting
-        //initWebview_then_callFromJs()
+        initWKWebViewJS()
     }
     
     override func didReceiveMemoryWarning() {
@@ -68,23 +68,8 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
         }
     }
     
-    func initWebview_then_callFromJs(){
-        ///JavaScript Call Setting
-        let contentController = WKUserContentController()
-        let config = WKWebViewConfiguration()
-        
-        ///ContentController 추가 (관리 Point JavaScript 함수 추가
-        contentController.add(self, name : "setting")
-        
-        config.userContentController = contentController
-        
-        webView = WKWebView(frame: webView.frame, configuration: config)
-    }
-    
-    func loadUrl(){
-        view.addSubview(webView)
-        
-        ///WKWebview 셋팅 (UserDefaults 이용)
+    func loadWKWebViewSetting(){
+        ///WKWebview 셋팅 (초기셋팅 UserDefaults 이용)
         let defaults = UserDefaults.standard
         
         var ip : String = ""
@@ -105,6 +90,22 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
         
         webView.uiDelegate = self
         webView.navigationDelegate = self
+        
+        view.addSubview(webView)
+    }
+    
+    func initWKWebViewJS(){
+        ///JavaScript Call Setting
+        let contentController = WKUserContentController()
+        let config = WKWebViewConfiguration()
+        
+        ///연동 Point JavaScript 함수 추가
+        contentController.add(self, name : "setting")
+        
+        config.userContentController = contentController
+        
+        ///Delegating and View Setting
+        webView = WKWebView(frame:self.view.bounds, configuration:config)
     }
     
     /// WKScriptMessageHandler Callback (Javascript -> Native Call (Param))
