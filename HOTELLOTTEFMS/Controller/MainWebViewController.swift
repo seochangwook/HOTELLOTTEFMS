@@ -5,12 +5,13 @@
 //  Created by ldcc on 2019/10/28.
 //  Copyright © 2019 ldcc. All rights reserved.
 //
-
 import UIKit
 import WebKit
 
 class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegate, WKScriptMessageHandler {
     @IBOutlet weak var webView: WKWebView!
+    
+    var viewInitCount : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,11 +20,19 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
-        ///JavaScript Call Setting
-        initWKWebViewJS()
-        
-        ///WKWebView Setting (View and Delegating)
-        loadWKWebViewSetting()
+        if(viewInitCount == 0){
+            ///viewInitCount = 0 is First 1 Init View and JS Call Setting
+    
+            ///JavaScript Call Setting
+            initWKWebViewJS()
+            
+            ///WKWebView Setting (View and Delegating)
+            loadWKWebViewSetting()
+            
+            viewInitCount = 1 ///Not Init Change Flag
+        } else{
+            ///viewInitCount = 1 is ViewDidAppear
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -68,6 +77,20 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
         }
     }
     
+    func initWKWebViewJS(){
+        ///JavaScript Call Setting
+        let contentController = WKUserContentController()
+        let config = WKWebViewConfiguration()
+        
+        ///연동 Point JavaScript 함수 추가
+        contentController.add(self, name : "setting")
+        
+        config.userContentController = contentController
+        
+        ///AutoLayout 적용 시 viewDidAppear 단계에서 초기화
+        webView = WKWebView(frame:self.webView.frame, configuration:config)
+    }
+    
     func loadWKWebViewSetting(){
         ///WKWebview 셋팅 (초기셋팅 UserDefaults 이용)
         let defaults = UserDefaults.standard
@@ -85,33 +108,21 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
         
         let url = URL(string: "http://" + ip + ":" + port)
         let request = URLRequest(url: url!)
-            
+        
+        ///View Setting
         webView.load(request)
         
+        ///Delegating Setting
         webView.uiDelegate = self
         webView.navigationDelegate = self
         
         view.addSubview(webView)
     }
     
-    func initWKWebViewJS(){
-        ///JavaScript Call Setting
-        let contentController = WKUserContentController()
-        let config = WKWebViewConfiguration()
-        
-        ///연동 Point JavaScript 함수 추가
-        contentController.add(self, name : "setting")
-        
-        config.userContentController = contentController
-        
-        webView = WKWebView(frame:self.webView.frame, configuration:config)
-    }
-    
     /// WKScriptMessageHandler Callback (Javascript -> Native Call (Param))
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         if(message.name == "setting"){
             print("call setting")
-            print(message.body)
         }
     }
     
