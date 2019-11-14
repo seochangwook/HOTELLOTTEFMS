@@ -109,14 +109,15 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
         let url = URL(string: "http://" + ip + ":" + port)
         let request = URLRequest(url: url!)
         
-        ///View Setting
-        webView.load(request)
-        
         ///Delegating Setting
         webView.uiDelegate = self
         webView.navigationDelegate = self
-        
+
+        ///View Setting
         view.addSubview(webView)
+        
+        ///WebSite Load
+        webView.load(request)
     }
     
     /// WKScriptMessageHandler Callback (Javascript -> Native Call (Param))
