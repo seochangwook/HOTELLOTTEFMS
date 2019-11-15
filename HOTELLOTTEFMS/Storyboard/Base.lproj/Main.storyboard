@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -50,6 +50,7 @@
                     </view>
                     <connections>
                         <outlet property="webView" destination="njD-V4-Osw" id="QSs-oA-p8j"/>
+                        <segue destination="2Pu-ii-ruD" kind="modal" identifier="mainwebview_setting" id="JKL-sN-Wpe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F8P-io-9Fc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -179,10 +180,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chevron.left" catalog="system" width="46" height="64"/>
+        <image name="chevron.left" catalog="system" width="48" height="64"/>
         <image name="splashimage.png" width="250" height="428"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PYO-7n-EC2"/>
+        <segue reference="JKL-sN-Wpe"/>
+        <segue reference="TJc-SJ-HoA"/>
     </inferredMetricsTieBreakers>
 </document>

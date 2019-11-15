@@ -40,7 +40,18 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
     }
     
     @IBAction func back_button(_ sender: UIBarButtonItem) {
-        let convert_StringUrl : String = webView.url!.path
+        let convert_StringUrl : String = webView.url?.path ?? "nil"
+        
+        if(convert_StringUrl == "nil"){
+            ///TODO : WKWebView Not Connect Success Process
+            let wkWebViewCheckAlert = UIAlertController(title: "HOTEL FMS", message: "앱을 종료합니다.(올바르지 않은 IP입니다. 앱을 재설치 후 다시 설정해주세요.)", preferredStyle: UIAlertController.Style.alert)
+                       
+            wkWebViewCheckAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+                UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
+            }))
+                       
+            self.present(wkWebViewCheckAlert, animated: true, completion: nil)
+        }
         
         if(webView.canGoBack){
             if(convert_StringUrl.contains("/fms/fms_main")){
@@ -120,10 +131,22 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
         webView.load(request)
     }
     
+    ///Move (iOS 13 Response - Modality changes (FullScreen))
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        var segue_id : String = segue.identifier!
+    
+        if(segue_id == "mainwebview_setting"){
+            let destination = segue.destination as! SettingViewController
+            
+            destination.modalPresentationStyle = .fullScreen
+        }
+    }
+    
     /// WKScriptMessageHandler Callback (Javascript -> Native Call (Param))
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         if(message.name == "setting"){
-            print("call setting")
+            performSegue(withIdentifier: "mainwebview_setting", sender: self)
         }
     }
     
