@@ -8,8 +8,16 @@
 import UIKit
 import WebKit
 
-class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegate, WKScriptMessageHandler {
+protocol QRReadingReturnDelegate {
+    func qrReadingReturnValue()
+}
+
+class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegate, WKScriptMessageHandler, QRReadingReturnDelegate {
+    
     @IBOutlet weak var webView: WKWebView!
+    
+    //QR Reading Value
+    var qrAddressValue : String = ""
     
     var viewInitCount : Int = 0
     
@@ -145,6 +153,8 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
             let destination = segue.destination as! QRReadingViewController
             
             destination.modalPresentationStyle = .fullScreen
+            
+            destination.qrdelegate = self
         }
     }
     
@@ -208,5 +218,10 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
     ///WKNavigationDelegate 중복적으로 리로드 방지 (iOS 9 이후지원)
     public func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {
         webView.reload()
+    }
+    
+    ///QRReadingReturnDelegate Callback 구현
+    func qrReadingReturnValue(){
+        print(qrAddressValue)
     }
 }

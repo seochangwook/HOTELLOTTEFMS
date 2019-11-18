@@ -14,6 +14,9 @@ class QRReadingViewController: UIViewController, AVCaptureMetadataOutputObjectsD
     var previewLayer: AVCaptureVideoPreviewLayer!
     
     var qrvalue : String?
+    
+    ///Delegate
+    var qrdelegate : QRReadingReturnDelegate!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -101,7 +104,7 @@ class QRReadingViewController: UIViewController, AVCaptureMetadataOutputObjectsD
         print(qrvalue)
         
         ///QR Reader Page View
-        //performSegue(withIdentifier: "previewcontroller", sender: self)
+        performSegue(withIdentifier: "qrreadingview_mainwebview", sender: self)
     }
 
     override var prefersStatusBarHidden: Bool {
@@ -112,24 +115,20 @@ class QRReadingViewController: UIViewController, AVCaptureMetadataOutputObjectsD
         return .portrait
     }
     
-    /*//스토리보드 이동(Modal, Push(Navigation)방식 모두 prepare에서 한다.)//
+    //스토리보드 이동(Modal, Push(Navigation)방식 모두 prepare에서 한다.)//
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         //이동할 스토리보드의 id저장.값이 변할 수 있는 것은 가변타입(var)로 한다. 고정값(상수)이면 let//
-        var segue_id : String = ""
-        segue_id = segue.identifier!
-        
-        //identifier값으로 비교한다.//
-        print("segue id : ", segue_id+" id")
+        var segue_id : String = segue.identifier!
     
         //스토리보드의 id값을 가지고 이동할 스토리보드를 선택한다.//
-        if(segue_id == "previewcontroller")
+        if(segue_id == "qrreadingview_mainwebview")
         {
-            print("move sotryboard...")
-            
-            let destination = segue.destination as! PreViewController
+            let destination = segue.destination as! MainWebViewController
         
             destination.qrAddressValue = qrvalue! //이동할 스토리보드에 있는 값을 받을 변수설정//
+            
+            qrdelegate.qrReadingReturnValue()
         }
-    }*/
+    }
 }
