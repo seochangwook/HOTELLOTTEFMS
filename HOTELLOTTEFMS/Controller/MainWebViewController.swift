@@ -95,6 +95,7 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
         
         ///연동 Point JavaScript 함수 추가
         contentController.add(self, name : "setting")
+        contentController.add(self, name : "goPatrolBarCode")
         
         config.userContentController = contentController
         
@@ -140,6 +141,10 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
             let destination = segue.destination as! SettingViewController
             
             destination.modalPresentationStyle = .fullScreen
+        } else if(segue_id == "mainwebview_qrreadingview"){
+            let destination = segue.destination as! QRReadingViewController
+            
+            destination.modalPresentationStyle = .fullScreen
         }
     }
     
@@ -147,6 +152,8 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         if(message.name == "setting"){
             performSegue(withIdentifier: "mainwebview_setting", sender: self)
+        } else if(message.name == "goPatrolBarCode"){
+            performSegue(withIdentifier: "mainwebview_qrreadingview", sender: self)
         }
     }
     

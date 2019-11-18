@@ -51,6 +51,7 @@
                     <connections>
                         <outlet property="webView" destination="njD-V4-Osw" id="QSs-oA-p8j"/>
                         <segue destination="2Pu-ii-ruD" kind="modal" identifier="mainwebview_setting" id="JKL-sN-Wpe"/>
+                        <segue destination="SsW-S3-LpY" kind="modal" identifier="mainwebview_qrreadingview" id="pSV-Yj-XZp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F8P-io-9Fc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -178,6 +179,22 @@
             </objects>
             <point key="canvasLocation" x="552.79999999999995" y="907.1964017991005"/>
         </scene>
+        <!--Reading View Controller-->
+        <scene sceneID="2BI-8p-NZE">
+            <objects>
+                <viewController id="SsW-S3-LpY" customClass="QRReadingViewController" customModule="HOTELLOTTEFMS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DP1-By-mud">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="8kM-8b-wS8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="70V-Ha-rD7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YTR-cb-BCA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1894" y="135"/>
+        </scene>
     </scenes>
     <resources>
         <image name="chevron.left" catalog="system" width="48" height="64"/>
@@ -185,6 +202,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="JKL-sN-Wpe"/>
-        <segue reference="TJc-SJ-HoA"/>
+        <segue reference="PYO-7n-EC2"/>
     </inferredMetricsTieBreakers>
 </document>
