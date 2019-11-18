@@ -56,7 +56,7 @@ List of libraries used when developing FMS iOS apps.
 | UserDefaults | https://developer.apple.com/documentation/foundation/userdefaults |
 | WKWebView | https://developer.apple.com/documentation/webkit/wkwebview |
 | AutoLayout | https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html |
-| AutoLayout | https://developer.apple.com/documentation/avfoundation |
+| AVFoundation | https://developer.apple.com/documentation/avfoundation |
 
 License
 ----
