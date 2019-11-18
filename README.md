@@ -44,7 +44,7 @@ Representing development progress as in progress / completed.
 | UserDefaults add | completed | scw |
 | WebKit Framework add | completed | scw |
 | AutoLayout apply | completed | scw |
-| QRCode Reading apply | completed | scw |
+| QR Code Reading apply | completed | scw |
 
 ### Library
 
