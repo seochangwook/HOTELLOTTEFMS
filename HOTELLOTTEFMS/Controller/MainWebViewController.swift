@@ -12,6 +12,9 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
     
     @IBOutlet weak var webView: WKWebView!
     
+    ///window.open()으로 열리는 새창
+    var createWebView: WKWebView?
+    
     var viewInitCount : Int = 0
     
     override func viewDidLoad() {
@@ -211,6 +214,31 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
     ///WKNavigationDelegate 중복적으로 리로드 방지 (iOS 9 이후지원)
     public func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {
         webView.reload()
+    }
+    
+    ///Popup Callback  (JS window.open() 처리)
+    func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
+        
+        let frame = UIScreen.main.bounds
+        
+        createWebView = WKWebView(frame: frame, configuration: configuration)
+        
+        createWebView!.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        
+        createWebView!.navigationDelegate = self
+        createWebView!.uiDelegate = self
+        
+        self.webView.load(navigationAction.request)
+        
+        return nil
+    }
+    
+    ///iOS9.0 이상
+    func webViewDidClose(_ webView: WKWebView) {
+        if webView == createWebView {
+            createWebView?.removeFromSuperview()
+            createWebView = nil
+        }
     }
     
     ///QRReadingDelegate Callback
