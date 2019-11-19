@@ -8,16 +8,9 @@
 import UIKit
 import WebKit
 
-protocol QRReadingReturnDelegate {
-    func qrReadingReturnValue()
-}
-
-class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegate, WKScriptMessageHandler, QRReadingReturnDelegate {
+class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegate, WKScriptMessageHandler, QRReadingDelegate{
     
     @IBOutlet weak var webView: WKWebView!
-    
-    //QR Reading Value
-    var qrAddressValue : String = ""
     
     var viewInitCount : Int = 0
     
@@ -152,9 +145,9 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
         } else if(segue_id == "mainwebview_qrreadingview"){
             let destination = segue.destination as! QRReadingViewController
             
-            destination.modalPresentationStyle = .fullScreen
+            destination.qrReadingDelegate = self
             
-            destination.qrdelegate = self
+            destination.modalPresentationStyle = .fullScreen
         }
     }
     
@@ -220,8 +213,15 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
         webView.reload()
     }
     
-    ///QRReadingReturnDelegate Callback 구현
-    func qrReadingReturnValue(){
-        print(qrAddressValue)
+    ///QRReadingDelegate Callback
+    func qrReadingReturnValue(data: String) {
+        ///Javascript Function Setting (Param)
+        let sendToCodefunc = "sendToCode('\(data)')"
+        
+        webView.evaluateJavaScript(sendToCodefunc, completionHandler: {(result, error) in
+            if let result = result {
+                print(result)
+            }
+        })
     }
 }
