@@ -39,7 +39,7 @@ Representing development progress as in progress / completed.
 | Project Name fix | completed | scw |
 | Pods Apply | completed | scw |
 | iOS 13 Response - Modality Changes | completed | scw |
-| Privacy - Camera, Photo Album Access | completed | scw |
+| Privacy - Camera, Photo Album Access (Info Modal Apply) | completed | scw |
 | Statusbar Hide | completed | scw |
 | UserDefaults add | completed | scw |
 | WebKit Framework add | completed | scw |
