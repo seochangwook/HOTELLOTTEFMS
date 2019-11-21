@@ -12,7 +12,7 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
     
     @IBOutlet weak var webView: WKWebView!
     
-    ///window.open()으로 열리는 새창
+    ///window.open() is new WKWebView
     var createWebView: WKWebView?
     
     var viewInitCount : Int = 0
@@ -248,7 +248,7 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
         
         webView.evaluateJavaScript(sendToCodefunc, completionHandler: {(result, error) in
             if let result = result {
-                print(result)
+
             }
         })
     }

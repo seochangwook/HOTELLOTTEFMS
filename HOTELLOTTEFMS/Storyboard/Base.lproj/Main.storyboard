@@ -56,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F8P-io-9Fc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1000.8" y="136.28185907046478"/>
+            <point key="canvasLocation" x="912" y="135"/>
         </scene>
         <!--Loading View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -173,11 +173,39 @@
                     <connections>
                         <outlet property="ip_textfield" destination="NIX-Xr-H8Q" id="gnd-u1-e2M"/>
                         <outlet property="port_textfield" destination="U0q-aE-dAT" id="aSY-Bq-Zpn"/>
+                        <segue destination="DqW-dE-Thw" kind="modal" identifier="setting_privacymodal" id="6Hg-xz-H13"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LVC-VE-0bz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="552.79999999999995" y="907.1964017991005"/>
+            <point key="canvasLocation" x="133" y="863"/>
+        </scene>
+        <!--Privacy Info Modal View Controller-->
+        <scene sceneID="TYb-OO-cXn">
+            <objects>
+                <viewController id="DqW-dE-Thw" customClass="PrivacyInfoModalViewController" customModule="HOTELLOTTEFMS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WBd-T1-dAc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKV-Q3-Exv">
+                                <rect key="frame" x="20" y="406" width="374" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="확인"/>
+                                <connections>
+                                    <action selector="agree_button:" destination="DqW-dE-Thw" eventType="touchUpInside" id="tCb-Aj-xEs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="4ER-hh-EXp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tpk-e0-Ocn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="911.59420289855075" y="862.5"/>
         </scene>
         <!--Reading View Controller-->
         <scene sceneID="2BI-8p-NZE">
@@ -190,13 +218,10 @@
                         <viewLayoutGuide key="safeArea" id="8kM-8b-wS8"/>
                     </view>
                     <navigationItem key="navigationItem" id="70V-Ha-rD7"/>
-                    <connections>
-                        <segue destination="NoD-p7-2oF" kind="modal" identifier="qrreadingview_mainwebview" id="LPH-HG-HKn"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YTR-cb-BCA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1897" y="135"/>
+            <point key="canvasLocation" x="1675" y="135"/>
         </scene>
     </scenes>
     <resources>
@@ -205,6 +230,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="JKL-sN-Wpe"/>
-        <segue reference="LPH-HG-HKn"/>
+        <segue reference="TJc-SJ-HoA"/>
     </inferredMetricsTieBreakers>
 </document>

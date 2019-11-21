@@ -27,12 +27,12 @@ class SettingViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.modalPresentationStyle = .fullScreen
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
+        
+        performSegue(withIdentifier: "setting_privacymodal", sender: self)
     }
     
     override func didReceiveMemoryWarning() {
@@ -80,6 +80,14 @@ class SettingViewController: UIViewController, UITextFieldDelegate {
             let destination = segue.destination as! MainWebViewController
             
             destination.modalPresentationStyle = .fullScreen
+        } else if(segue_id == "setting_privacymodal"){
+            let destination = segue.destination as! PrivacyInfoModalViewController
+            
+            if #available(iOS 13.0, *) {
+                destination.isModalInPresentation = true
+            } else {
+                // Fallback on earlier versions
+            }
         }
     }
     
