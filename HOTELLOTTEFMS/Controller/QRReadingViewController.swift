@@ -9,11 +9,6 @@
 import UIKit
 import AVFoundation
 
-///Protocol
-protocol QRReadingDelegate : class{
-    func qrReadingReturnValue(data : String)
-}
-
 ///Class
 class QRReadingViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     var captureSession: AVCaptureSession!

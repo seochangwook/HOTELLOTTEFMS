@@ -21,6 +21,9 @@
 		62955E212366E7A700177E15 /* NetworkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62955E202366E7A700177E15 /* NetworkUtil.swift */; };
 		62D740992371699A00EA19C2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D740982371699A00EA19C2 /* WebKit.framework */; };
 		62D7409B2382ABE500EA19C2 /* QRReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D7409A2382ABE500EA19C2 /* QRReadingViewController.swift */; };
+		62D7409F238772F000EA19C2 /* QRReadingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D7409E238772F000EA19C2 /* QRReadingProtocol.swift */; };
+		62D740A72387989500EA19C2 /* camera_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 62D740A62387989500EA19C2 /* camera_image.png */; };
+		62D740A92387989D00EA19C2 /* imagestorage_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 62D740A82387989C00EA19C2 /* imagestorage_image.png */; };
 		88B721DEFD2C7AC0A79A5B30 /* Pods_HOTELLOTTEFMS_HOTELLOTTEFMSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF2CE02BCBEED0EE57884B5 /* Pods_HOTELLOTTEFMS_HOTELLOTTEFMSUITests.framework */; };
 		AA8BD0422386C6FA00669941 /* PrivacyInfoModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8BD0412386C6FA00669941 /* PrivacyInfoModalViewController.swift */; };
 		B2A1AE44498DAF26031A8B33 /* Pods_HOTELLOTTEFMSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA48CAC77DF9E706895E3E5 /* Pods_HOTELLOTTEFMSTests.framework */; };
@@ -67,6 +70,9 @@
 		62955E202366E7A700177E15 /* NetworkUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtil.swift; sourceTree = "<group>"; };
 		62D740982371699A00EA19C2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		62D7409A2382ABE500EA19C2 /* QRReadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRReadingViewController.swift; sourceTree = "<group>"; };
+		62D7409E238772F000EA19C2 /* QRReadingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRReadingProtocol.swift; sourceTree = "<group>"; };
+		62D740A62387989500EA19C2 /* camera_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_image.png; sourceTree = "<group>"; };
+		62D740A82387989C00EA19C2 /* imagestorage_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagestorage_image.png; sourceTree = "<group>"; };
 		821894A49F00FC928E2DDD70 /* Pods-HOTELLOTTEFMS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOTELLOTTEFMS.release.xcconfig"; path = "Target Support Files/Pods-HOTELLOTTEFMS/Pods-HOTELLOTTEFMS.release.xcconfig"; sourceTree = "<group>"; };
 		872F0F683C3E55087557980E /* Pods_HOTELLOTTEFMS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HOTELLOTTEFMS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA8BD0412386C6FA00669941 /* PrivacyInfoModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyInfoModalViewController.swift; sourceTree = "<group>"; };
@@ -140,10 +146,10 @@
 		623BD97F235E9BC5008A9C74 /* HOTELLOTTEFMS */ = {
 			isa = PBXGroup;
 			children = (
+				62D740A02387736E00EA19C2 /* Protocol */,
 				62955E1F2366E13D00177E15 /* Util */,
 				6260F1992361ADFF00964DA4 /* Application */,
 				6260F1952361AD1100964DA4 /* Controller */,
-				6260F1962361AD9300964DA4 /* Storyboard */,
 				6260F1912361AACF00964DA4 /* Resources */,
 				623BD98E235E9BC6008A9C74 /* Info.plist */,
 				62955E192366D7BD00177E15 /* Assets.xcassets */,
@@ -172,6 +178,7 @@
 		6260F1912361AACF00964DA4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6260F1962361AD9300964DA4 /* Storyboard */,
 				6260F1972361ADA700964DA4 /* Image */,
 			);
 			name = Resources;
@@ -201,6 +208,8 @@
 		6260F1972361ADA700964DA4 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				62D740A82387989C00EA19C2 /* imagestorage_image.png */,
+				62D740A62387989500EA19C2 /* camera_image.png */,
 				62955E172366D62E00177E15 /* splashimage.png */,
 			);
 			path = Image;
@@ -221,6 +230,14 @@
 				62955E202366E7A700177E15 /* NetworkUtil.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		62D740A02387736E00EA19C2 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				62D7409E238772F000EA19C2 /* QRReadingProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		B24B968EDD3B60CB545E9B08 /* Pods */ = {
@@ -343,6 +360,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62D740A72387989500EA19C2 /* camera_image.png in Resources */,
+				62D740A92387989D00EA19C2 /* imagestorage_image.png in Resources */,
 				62955E182366D62E00177E15 /* splashimage.png in Resources */,
 				623BD98D235E9BC6008A9C74 /* LaunchScreen.storyboard in Resources */,
 				623BD988235E9BC5008A9C74 /* Main.storyboard in Resources */,
@@ -448,6 +467,7 @@
 				623BD981235E9BC5008A9C74 /* AppDelegate.swift in Sources */,
 				62D7409B2382ABE500EA19C2 /* QRReadingViewController.swift in Sources */,
 				623BD983235E9BC5008A9C74 /* SceneDelegate.swift in Sources */,
+				62D7409F238772F000EA19C2 /* QRReadingProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
