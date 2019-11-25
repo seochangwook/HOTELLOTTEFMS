@@ -62,7 +62,7 @@ class SettingViewController: UIViewController, UITextFieldDelegate {
                 let port_textfiled_text : String = port_textfield.text!
                 
                 if(ip_textfield_text.isEmpty || port_textfiled_text.isEmpty || NetworkUtil.isIPv4(ip_textfield_text) == false){
-                    let inputCheckAlert = UIAlertController(title: "HOTEL FMS", message: "ipportvalidationmessage".localized(), preferredStyle: UIAlertController.Style.alert)
+                    let inputCheckAlert = UIAlertController(title: "AppTitle".localized(), message: "ipportvalidationmessage".localized(), preferredStyle: UIAlertController.Style.alert)
                     
                     inputCheckAlert.addAction(UIAlertAction(title: "okmodalbutton".localized(), style: .default, handler: { (action: UIAlertAction!) in
                     }))

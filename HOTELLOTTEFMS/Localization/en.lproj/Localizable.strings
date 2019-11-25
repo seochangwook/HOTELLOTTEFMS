@@ -6,7 +6,9 @@
   Copyright © 2019 ldcc. All rights reserved.
 */
 ///Common
-
+"AppTitle" = "HOTEL FMS";
+"okmodalbutton" = "Ok";
+"cancelmodalbutton" = "Cancel";
 
 ///SettingViewController
 "ServerIP" = "Server IP";
@@ -14,9 +16,18 @@
 "Setting" = "Setting";
 "Savebuttontitle" = "Ok";
 "ipportvalidationmessage" = "The input information is incorrect. Please enter IP and PORT information again";
-"okmodalbutton" = "Ok";
 
 ///PrivacyInfoModalViewController
 "privacymaintitle" = "App User Agreement";
 "privacysubtitle" = "You must agree to use the App";
 "agreebuttontitle" = "Agree";
+
+///MainWebViewController
+"ipcheckalert" = "Quit the app. (Invalid IP. Please reinstall the app.)";
+"appexit" = "Do you want to exit the app?";
+
+///LoadingViewController
+"appexitnetwork" = "Quit the app (check the network status)";
+
+///QRReadingViewController
+"qrissuemessage" = "Your device does not support scanning a code from an item. Please use a device with a camera.";

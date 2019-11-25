@@ -41,9 +41,9 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
         
         if(convert_StringUrl == "nil"){
             ///TODO : WKWebView Not Connect Success Process
-            let wkWebViewCheckAlert = UIAlertController(title: "HOTEL FMS", message: "앱을 종료합니다.(올바르지 않은 IP입니다. 앱을 재설치 후 다시 설정해주세요.)", preferredStyle: UIAlertController.Style.alert)
+            let wkWebViewCheckAlert = UIAlertController(title: "AppTitle".localized(), message: "ipcheckalert".localized(), preferredStyle: UIAlertController.Style.alert)
                        
-            wkWebViewCheckAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+            wkWebViewCheckAlert.addAction(UIAlertAction(title: "okmodalbutton".localized(), style: .default, handler: { (action: UIAlertAction!) in
                 UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
             }))
                        
@@ -53,15 +53,15 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
         if(webView.canGoBack){
             if(convert_StringUrl.contains("/fms/fms_main")){
                 //FMS Main Page Back button click
-                let appExitAlert = UIAlertController(title: "HOTEL FMS", message: "앱을 종료하시겠습니까?", preferredStyle: UIAlertController.Style.alert)
+                let appExitAlert = UIAlertController(title: "AppTitle".localized(), message: "appexit".localized(), preferredStyle: UIAlertController.Style.alert)
                 
-                appExitAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+                appExitAlert.addAction(UIAlertAction(title: "okmodalbutton".localized(), style: .default, handler: { (action: UIAlertAction!) in
                     
                     ///App exit is go home screen
                     UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
                 }))
                 
-                appExitAlert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action: UIAlertAction!) in
+                appExitAlert.addAction(UIAlertAction(title: "cancelmodalbutton".localized(), style: .default, handler: { (action: UIAlertAction!) in
                     
                 }))
                 
@@ -71,13 +71,13 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
             }
         } else{
             ///Login Page Back button click
-            let appExitAlert = UIAlertController(title: "HOTEL FMS", message: "앱을 종료하시겠습니까?", preferredStyle: UIAlertController.Style.alert)
+            let appExitAlert = UIAlertController(title: "AppTitle".localized(), message: "appexit".localized(), preferredStyle: UIAlertController.Style.alert)
             
-            appExitAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+            appExitAlert.addAction(UIAlertAction(title: "okmodalbutton".localized(), style: .default, handler: { (action: UIAlertAction!) in
                 UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
             }))
             
-            appExitAlert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action: UIAlertAction!) in
+            appExitAlert.addAction(UIAlertAction(title: "cancelmodalbutton".localized(), style: .default, handler: { (action: UIAlertAction!) in
                 
             }))
             
@@ -158,9 +158,9 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
     
     ///WKUIDelegate 3가지 필수 Callback 함수
     func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
-        let alertController = UIAlertController(title: "HOTEL FMS", message: message, preferredStyle: .alert)
+        let alertController = UIAlertController(title: "AppTitle".localized(), message: message, preferredStyle: .alert)
         
-        alertController.addAction(UIAlertAction(title: "확인", style: .default, handler: {(action) in
+        alertController.addAction(UIAlertAction(title: "okmodalbutton".localized(), style: .default, handler: {(action) in
             completionHandler()
         }))
         
@@ -169,13 +169,13 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
     
     
     func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Void) {
-        let alertController = UIAlertController(title: "HOTEL FMS", message: message, preferredStyle: .alert)
+        let alertController = UIAlertController(title: "AppTitle".localized(), message: message, preferredStyle: .alert)
         
-        alertController.addAction(UIAlertAction(title: "확인", style: .default, handler: { (action) in
+        alertController.addAction(UIAlertAction(title: "okmodalbutton".localized(), style: .default, handler: { (action) in
             completionHandler(true)
         }))
         
-        alertController.addAction(UIAlertAction(title: "취소", style: .default, handler: { (action) in
+        alertController.addAction(UIAlertAction(title: "cancelmodalbutton".localized(), style: .default, handler: { (action) in
             completionHandler(false)
         }))
         
@@ -183,13 +183,13 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
     }
     
     func webView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (String?) -> Void) {
-        let alertController = UIAlertController(title: "HOTEL FMS", message: prompt, preferredStyle: .alert)
+        let alertController = UIAlertController(title: "AppTitle".localized(), message: prompt, preferredStyle: .alert)
         
         alertController.addTextField { (textField) in
             textField.text = defaultText
         }
         
-        alertController.addAction(UIAlertAction(title: "확인", style: .default, handler: { (action) in
+        alertController.addAction(UIAlertAction(title: "okmodalbutton".localized(), style: .default, handler: { (action) in
             if let text = alertController.textFields?.first?.text {
                 completionHandler(text)
             } else {
@@ -197,7 +197,7 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
             }
         }))
 
-        alertController.addAction(UIAlertAction(title: "취소", style: .default, handler: { (action) in
+        alertController.addAction(UIAlertAction(title: "cancelmodalbutton".localized(), style: .default, handler: { (action) in
             completionHandler(nil)
         }))
 

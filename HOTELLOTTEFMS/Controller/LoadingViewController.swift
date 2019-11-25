@@ -69,9 +69,9 @@ class LoadingViewController: UIViewController {
             
         } else{
              ///TODO : Network Not Connect Success Process
-            let networkCheckAlert = UIAlertController(title: "HOTEL FMS", message: "앱을 종료합니다.(네트워크를 연결해주세요)", preferredStyle: UIAlertController.Style.alert)
+            let networkCheckAlert = UIAlertController(title: "AppTitle".localized(), message: "appexitnetwork".localized(), preferredStyle: UIAlertController.Style.alert)
             
-            networkCheckAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+            networkCheckAlert.addAction(UIAlertAction(title: "okmodalbutton".localized(), style: .default, handler: { (action: UIAlertAction!) in
                 UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
             }))
             
