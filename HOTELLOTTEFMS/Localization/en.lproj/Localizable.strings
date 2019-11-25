@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  HOTELLOTTEFMS
+
+  Created by ldcc on 2019/11/25.
+  Copyright © 2019 ldcc. All rights reserved.
+*/
+"ServerIP" = "Server IP";
+"ServerPORT" = "Server PORT";

@@ -1,0 +1,36 @@
+
+/* Class = "UILabel"; text = "서버 IP"; ObjectID = "1PQ-qK-dBm"; */
+"1PQ-qK-dBm.text" = "서버 IP";
+
+/* Class = "UILabel"; text = "(동의를 해야지 App 이용이 가능합니다.)"; ObjectID = "38l-dv-VmN"; */
+"38l-dv-VmN.text" = "(동의를 해야지 App 이용이 가능합니다.)";
+
+/* Class = "UILabel"; text = "이 앱은 갤러리 권한을 필요로 합니다."; ObjectID = "7mL-Aw-BRH"; */
+"7mL-Aw-BRH.text" = "이 앱은 갤러리 권한을 필요로 합니다.";
+
+/* Class = "UIButton"; normalTitle = "확인 (Agree)"; ObjectID = "GKV-Q3-Exv"; */
+"GKV-Q3-Exv.normalTitle" = "확인 (Agree)";
+
+/* Class = "UILabel"; text = "이 앱은 카메라 권한을 필요로 합니다."; ObjectID = "Il2-9d-hpb"; */
+"Il2-9d-hpb.text" = "이 앱은 카메라 권한을 필요로 합니다.";
+
+/* Class = "UILabel"; text = "This app requires camera permissions."; ObjectID = "Teg-As-TaT"; */
+"Teg-As-TaT.text" = "This app requires camera permissions.";
+
+/* Class = "UILabel"; text = "This app requires gallery permissions."; ObjectID = "ZV8-7x-FgE"; */
+"ZV8-7x-FgE.text" = "This app requires gallery permissions.";
+
+/* Class = "UIButton"; normalTitle = "확인 (Ok)"; ObjectID = "cBL-fU-Nfv"; */
+"cBL-fU-Nfv.normalTitle" = "확인 (Ok)";
+
+/* Class = "UIBarButtonItem"; title = "<"; ObjectID = "d9S-db-yTJ"; */
+"d9S-db-yTJ.title" = "<";
+
+/* Class = "UILabel"; text = "시설관리시스템(FMS) App 사용자 동의사항"; ObjectID = "gqr-qS-59i"; */
+"gqr-qS-59i.text" = "시설관리시스템(FMS) App 사용자 동의사항";
+
+/* Class = "UILabel"; text = "포트번호"; ObjectID = "lue-qa-fhO"; */
+"lue-qa-fhO.text" = "포트번호";
+
+/* Class = "UINavigationItem"; title = "설정 (Setting)"; ObjectID = "mKM-VZ-ySE"; */
+"mKM-VZ-ySE.title" = "설정 (Setting)";

@@ -9,6 +9,9 @@
 import UIKit
 
 class SettingViewController: UIViewController, UITextFieldDelegate {
+    @IBOutlet weak var serveriplabel: UILabel!
+    @IBOutlet weak var serverportlabel: UILabel!
+    
     @IBOutlet weak var ip_textfield: UITextField! {
         didSet{
             ip_textfield.delegate = self
@@ -27,6 +30,9 @@ class SettingViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        serveriplabel.text = "ServerIP".localized()
+        serverportlabel.text = "ServerPORT".localized()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -105,5 +111,11 @@ class SettingViewController: UIViewController, UITextFieldDelegate {
         port_textfield.resignFirstResponder()
         
         return true
+    }
+}
+
+extension String {
+    func localized(bundle: Bundle = .main, tableName: String = "Localizable") -> String{
+        return NSLocalizedString(self, tableName: tableName, value: "**\(self)**", comment: "")
     }
 }

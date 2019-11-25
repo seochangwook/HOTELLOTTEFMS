@@ -110,13 +110,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서버 IP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1PQ-qK-dBm">
-                                <rect key="frame" x="16" y="76" width="148" height="21"/>
+                                <rect key="frame" x="15.999999999999996" y="76" width="48.666666666666657" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="포트번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lue-qa-fhO">
-                                <rect key="frame" x="20" y="171" width="98" height="21"/>
+                                <rect key="frame" x="20" y="171" width="59" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -150,9 +150,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="rQb-nM-SJ6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lue-qa-fhO" secondAttribute="trailing" symbolic="YES" id="7Uu-bl-uL4"/>
                             <constraint firstItem="AwU-97-XQ2" firstAttribute="top" secondItem="rQb-nM-SJ6" secondAttribute="top" id="DpP-Q7-1m2"/>
+                            <constraint firstItem="rQb-nM-SJ6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1PQ-qK-dBm" secondAttribute="trailing" symbolic="YES" id="Ef7-yK-0WF"/>
                             <constraint firstItem="cBL-fU-Nfv" firstAttribute="top" secondItem="U0q-aE-dAT" secondAttribute="bottom" priority="250" constant="348" id="Exf-Uz-PV8"/>
-                            <constraint firstItem="rQb-nM-SJ6" firstAttribute="trailing" secondItem="lue-qa-fhO" secondAttribute="trailing" constant="296" id="T7z-I8-ThO"/>
                             <constraint firstItem="NIX-Xr-H8Q" firstAttribute="top" secondItem="1PQ-qK-dBm" secondAttribute="bottom" constant="20" id="WyD-C3-du4"/>
                             <constraint firstItem="AwU-97-XQ2" firstAttribute="leading" secondItem="rQb-nM-SJ6" secondAttribute="leading" id="ZVu-n2-Dp5"/>
                             <constraint firstItem="1PQ-qK-dBm" firstAttribute="top" secondItem="AwU-97-XQ2" secondAttribute="bottom" constant="20" id="Zeg-kL-Tg2"/>
@@ -162,7 +163,6 @@
                             <constraint firstItem="NIX-Xr-H8Q" firstAttribute="leading" secondItem="rQb-nM-SJ6" secondAttribute="leading" constant="16" id="qo3-ca-m0m"/>
                             <constraint firstItem="rQb-nM-SJ6" firstAttribute="trailing" secondItem="NIX-Xr-H8Q" secondAttribute="trailing" constant="16" id="rPq-bE-YbC"/>
                             <constraint firstItem="U0q-aE-dAT" firstAttribute="leading" secondItem="rQb-nM-SJ6" secondAttribute="leading" constant="16" id="tGy-3D-D4Q"/>
-                            <constraint firstItem="rQb-nM-SJ6" firstAttribute="trailing" secondItem="1PQ-qK-dBm" secondAttribute="trailing" constant="250" id="uGR-9Y-2kW"/>
                             <constraint firstItem="lue-qa-fhO" firstAttribute="top" secondItem="NIX-Xr-H8Q" secondAttribute="bottom" constant="20" id="usx-Cm-CYI"/>
                             <constraint firstItem="cBL-fU-Nfv" firstAttribute="leading" secondItem="rQb-nM-SJ6" secondAttribute="leading" constant="16" id="wb0-Cv-xGK"/>
                             <constraint firstItem="U0q-aE-dAT" firstAttribute="top" secondItem="lue-qa-fhO" secondAttribute="bottom" constant="20" id="xBH-XQ-taA"/>
@@ -175,6 +175,8 @@
                     <connections>
                         <outlet property="ip_textfield" destination="NIX-Xr-H8Q" id="gnd-u1-e2M"/>
                         <outlet property="port_textfield" destination="U0q-aE-dAT" id="aSY-Bq-Zpn"/>
+                        <outlet property="serveriplabel" destination="1PQ-qK-dBm" id="7aJ-WM-otb"/>
+                        <outlet property="serverportlabel" destination="lue-qa-fhO" id="3Ds-3x-ZhR"/>
                         <segue destination="DqW-dE-Thw" kind="modal" identifier="setting_privacymodal" id="6Hg-xz-H13"/>
                     </connections>
                 </viewController>
@@ -195,7 +197,7 @@
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <state key="normal" title="확인 (동의)">
+                                <state key="normal" title="확인">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>

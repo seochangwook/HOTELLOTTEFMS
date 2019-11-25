@@ -24,6 +24,7 @@
 		62D7409F238772F000EA19C2 /* QRReadingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D7409E238772F000EA19C2 /* QRReadingProtocol.swift */; };
 		62D740A72387989500EA19C2 /* camera_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 62D740A62387989500EA19C2 /* camera_image.png */; };
 		62D740A92387989D00EA19C2 /* imagestorage_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 62D740A82387989C00EA19C2 /* imagestorage_image.png */; };
+		62D740AE238BA4A500EA19C2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62D740B0238BA4A500EA19C2 /* Localizable.strings */; };
 		88B721DEFD2C7AC0A79A5B30 /* Pods_HOTELLOTTEFMS_HOTELLOTTEFMSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF2CE02BCBEED0EE57884B5 /* Pods_HOTELLOTTEFMS_HOTELLOTTEFMSUITests.framework */; };
 		AA8BD0422386C6FA00669941 /* PrivacyInfoModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8BD0412386C6FA00669941 /* PrivacyInfoModalViewController.swift */; };
 		B2A1AE44498DAF26031A8B33 /* Pods_HOTELLOTTEFMSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA48CAC77DF9E706895E3E5 /* Pods_HOTELLOTTEFMSTests.framework */; };
@@ -73,6 +74,10 @@
 		62D7409E238772F000EA19C2 /* QRReadingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRReadingProtocol.swift; sourceTree = "<group>"; };
 		62D740A62387989500EA19C2 /* camera_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_image.png; sourceTree = "<group>"; };
 		62D740A82387989C00EA19C2 /* imagestorage_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagestorage_image.png; sourceTree = "<group>"; };
+		62D740AF238BA4A500EA19C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		62D740B1238BA57900EA19C2 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		62D740B2238BA57A00EA19C2 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		62D740B3238BA57A00EA19C2 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		821894A49F00FC928E2DDD70 /* Pods-HOTELLOTTEFMS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOTELLOTTEFMS.release.xcconfig"; path = "Target Support Files/Pods-HOTELLOTTEFMS/Pods-HOTELLOTTEFMS.release.xcconfig"; sourceTree = "<group>"; };
 		872F0F683C3E55087557980E /* Pods_HOTELLOTTEFMS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HOTELLOTTEFMS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA8BD0412386C6FA00669941 /* PrivacyInfoModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyInfoModalViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +151,7 @@
 		623BD97F235E9BC5008A9C74 /* HOTELLOTTEFMS */ = {
 			isa = PBXGroup;
 			children = (
+				62D740AB238BA40000EA19C2 /* Localization */,
 				62D740A02387736E00EA19C2 /* Protocol */,
 				62955E1F2366E13D00177E15 /* Util */,
 				6260F1992361ADFF00964DA4 /* Application */,
@@ -238,6 +244,14 @@
 				62D7409E238772F000EA19C2 /* QRReadingProtocol.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		62D740AB238BA40000EA19C2 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				62D740B0238BA4A500EA19C2 /* Localizable.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 		B24B968EDD3B60CB545E9B08 /* Pods */ = {
@@ -342,6 +356,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 623BD974235E9BC5008A9C74;
 			productRefGroup = 623BD97E235E9BC5008A9C74 /* Products */;
@@ -363,6 +378,7 @@
 				62D740A72387989500EA19C2 /* camera_image.png in Resources */,
 				62D740A92387989D00EA19C2 /* imagestorage_image.png in Resources */,
 				62955E182366D62E00177E15 /* splashimage.png in Resources */,
+				62D740AE238BA4A500EA19C2 /* Localizable.strings in Resources */,
 				623BD98D235E9BC6008A9C74 /* LaunchScreen.storyboard in Resources */,
 				623BD988235E9BC5008A9C74 /* Main.storyboard in Resources */,
 				62955E1A2366D7BD00177E15 /* Assets.xcassets in Resources */,
@@ -507,6 +523,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				623BD987235E9BC5008A9C74 /* Base */,
+				62D740B1238BA57900EA19C2 /* ko */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -515,8 +532,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				623BD98C235E9BC6008A9C74 /* Base */,
+				62D740B2238BA57A00EA19C2 /* ko */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		62D740B0238BA4A500EA19C2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62D740AF238BA4A500EA19C2 /* en */,
+				62D740B3238BA57A00EA19C2 /* ko */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -526,6 +553,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -586,6 +614,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

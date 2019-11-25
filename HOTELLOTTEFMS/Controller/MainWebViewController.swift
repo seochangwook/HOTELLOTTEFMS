@@ -14,7 +14,7 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
     
     ///window.open() is new WKWebView
     var createWebView: WKWebView?
-  
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }

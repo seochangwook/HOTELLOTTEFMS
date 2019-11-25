@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  HOTELLOTTEFMS
+
+  Created by ldcc on 2019/11/25.
+  Copyright © 2019 ldcc. All rights reserved.
+*/
+"ServerIP" = "서버 IP";
+"ServerPORT" = "포트번호";
