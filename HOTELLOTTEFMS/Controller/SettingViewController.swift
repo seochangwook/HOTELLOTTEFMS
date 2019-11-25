@@ -32,7 +32,10 @@ class SettingViewController: UIViewController, UITextFieldDelegate {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
-        performSegue(withIdentifier: "setting_privacymodal", sender: self)
+        ///FIrst Active Condition
+        if isBeingPresented || isMovingToParent {
+            performSegue(withIdentifier: "setting_privacymodal", sender: self)
+        }
     }
     
     override func didReceiveMemoryWarning() {

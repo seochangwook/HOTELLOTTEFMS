@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="njD-V4-Osw">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="764"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -25,7 +25,7 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qJe-Tf-2pM">
-                                <rect key="frame" x="0.0" y="764" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="759" width="414" height="49"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <barButtonItem title="&lt;" image="chevron.left" catalog="system" id="d9S-db-yTJ">
@@ -269,12 +269,15 @@
                             <constraint firstItem="ZV8-7x-FgE" firstAttribute="top" secondItem="7mL-Aw-BRH" secondAttribute="bottom" constant="8" id="OWR-XN-1eq"/>
                             <constraint firstItem="Teg-As-TaT" firstAttribute="trailing" secondItem="ZV8-7x-FgE" secondAttribute="trailing" id="PHa-4t-yez"/>
                             <constraint firstItem="cIz-Pd-7V0" firstAttribute="leading" secondItem="4ER-hh-EXp" secondAttribute="leading" constant="43" id="Qts-tp-kw2"/>
-                            <constraint firstItem="Teg-As-TaT" firstAttribute="leading" secondItem="7mL-Aw-BRH" secondAttribute="leading" id="QwZ-mU-z2a"/>
+                            <constraint firstItem="Teg-As-TaT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7mL-Aw-BRH" secondAttribute="leading" id="QwZ-mU-z2a"/>
                             <constraint firstItem="7mL-Aw-BRH" firstAttribute="top" secondItem="Teg-As-TaT" secondAttribute="bottom" constant="26" id="S5Z-dM-oD8"/>
                             <constraint firstItem="Teg-As-TaT" firstAttribute="leading" secondItem="ZV8-7x-FgE" secondAttribute="leading" id="UOd-Kx-UPN"/>
+                            <constraint firstItem="4ER-hh-EXp" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Il2-9d-hpb" secondAttribute="trailing" symbolic="YES" id="YWb-ot-m2g"/>
                             <constraint firstItem="38l-dv-VmN" firstAttribute="trailing" secondItem="GKV-Q3-Exv" secondAttribute="trailing" id="age-Wk-yPf"/>
+                            <constraint firstItem="4ER-hh-EXp" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7mL-Aw-BRH" secondAttribute="trailing" symbolic="YES" id="bvc-c1-L7H"/>
                             <constraint firstItem="ZV8-7x-FgE" firstAttribute="top" secondItem="WBd-T1-dAc" secondAttribute="top" constant="231" id="ezY-d8-qhb"/>
                             <constraint firstItem="38l-dv-VmN" firstAttribute="top" secondItem="gqr-qS-59i" secondAttribute="bottom" constant="8" id="faz-HZ-Cnw"/>
+                            <constraint firstItem="7mL-Aw-BRH" firstAttribute="leading" secondItem="hnr-iA-i3L" secondAttribute="trailing" constant="11" id="jFo-Th-twF"/>
                             <constraint firstItem="Teg-As-TaT" firstAttribute="top" secondItem="Il2-9d-hpb" secondAttribute="bottom" constant="8" id="jng-mx-vjb"/>
                             <constraint firstItem="hnr-iA-i3L" firstAttribute="top" secondItem="cIz-Pd-7V0" secondAttribute="bottom" constant="22" id="kBR-AN-hft"/>
                             <constraint firstItem="cIz-Pd-7V0" firstAttribute="top" secondItem="38l-dv-VmN" secondAttribute="bottom" constant="39.333333333333329" id="pHY-NE-FaS"/>
@@ -310,7 +313,7 @@
     </scenes>
     <resources>
         <image name="camera_image.png" width="384" height="384"/>
-        <image name="chevron.left" catalog="system" width="46" height="64"/>
+        <image name="chevron.left" catalog="system" width="48" height="64"/>
         <image name="imagestorage_image.png" width="384" height="384"/>
         <image name="splashimage.png" width="250" height="428"/>
     </resources>

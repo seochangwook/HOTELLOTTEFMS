@@ -14,9 +14,7 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
     
     ///window.open() is new WKWebView
     var createWebView: WKWebView?
-    
-    var viewInitCount : Int = 0
-    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -24,18 +22,13 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
-        if(viewInitCount == 0){
-            ///viewInitCount = 0 is First 1 Init View and JS Call Setting
-    
+        ///FIrst Active Condition
+        if isBeingPresented || isMovingToParent {
             ///JavaScript Call Setting
             initWKWebViewJS()
             
             ///WKWebView Setting (View and Delegating)
             loadWKWebViewSetting()
-            
-            viewInitCount = 1 ///Not Init Change Flag
-        } else{
-            ///viewInitCount = 1 is ViewDidAppear
         }
     }
     
