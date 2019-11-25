@@ -45,6 +45,7 @@ Representing development progress as in progress / completed.
 | WebKit Framework add | completed | scw |
 | AutoLayout apply | completed | scw |
 | QR Code Reading apply | completed | scw |
+| Localization apply | completed | scw |
 
 ### Library
 
@@ -57,6 +58,7 @@ List of libraries used when developing FMS iOS apps.
 | WKWebView | https://developer.apple.com/documentation/webkit/wkwebview |
 | AutoLayout | https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html |
 | AVFoundation | https://developer.apple.com/documentation/avfoundation |
+| Localization | https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/LocalizingYourApp/LocalizingYourApp.html#//apple_ref/doc/uid/10000171i-CH5-SW1 |
 
 License
 ----
