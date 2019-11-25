@@ -25,6 +25,7 @@
 		62D740A72387989500EA19C2 /* camera_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 62D740A62387989500EA19C2 /* camera_image.png */; };
 		62D740A92387989D00EA19C2 /* imagestorage_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 62D740A82387989C00EA19C2 /* imagestorage_image.png */; };
 		62D740AE238BA4A500EA19C2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62D740B0238BA4A500EA19C2 /* Localizable.strings */; };
+		62D740B7238BBAF200EA19C2 /* StringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D740B6238BBAF200EA19C2 /* StringUtil.swift */; };
 		88B721DEFD2C7AC0A79A5B30 /* Pods_HOTELLOTTEFMS_HOTELLOTTEFMSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF2CE02BCBEED0EE57884B5 /* Pods_HOTELLOTTEFMS_HOTELLOTTEFMSUITests.framework */; };
 		AA8BD0422386C6FA00669941 /* PrivacyInfoModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8BD0412386C6FA00669941 /* PrivacyInfoModalViewController.swift */; };
 		B2A1AE44498DAF26031A8B33 /* Pods_HOTELLOTTEFMSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA48CAC77DF9E706895E3E5 /* Pods_HOTELLOTTEFMSTests.framework */; };
@@ -78,6 +79,7 @@
 		62D740B1238BA57900EA19C2 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
 		62D740B2238BA57A00EA19C2 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		62D740B3238BA57A00EA19C2 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		62D740B6238BBAF200EA19C2 /* StringUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtil.swift; sourceTree = "<group>"; };
 		821894A49F00FC928E2DDD70 /* Pods-HOTELLOTTEFMS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOTELLOTTEFMS.release.xcconfig"; path = "Target Support Files/Pods-HOTELLOTTEFMS/Pods-HOTELLOTTEFMS.release.xcconfig"; sourceTree = "<group>"; };
 		872F0F683C3E55087557980E /* Pods_HOTELLOTTEFMS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HOTELLOTTEFMS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA8BD0412386C6FA00669941 /* PrivacyInfoModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyInfoModalViewController.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				62955E202366E7A700177E15 /* NetworkUtil.swift */,
+				62D740B6238BBAF200EA19C2 /* StringUtil.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 			files = (
 				62955E1E2366DEAD00177E15 /* SettingViewController.swift in Sources */,
 				62955E1C2366DDB900177E15 /* MainWebViewController.swift in Sources */,
+				62D740B7238BBAF200EA19C2 /* StringUtil.swift in Sources */,
 				62955E212366E7A700177E15 /* NetworkUtil.swift in Sources */,
 				623BD985235E9BC5008A9C74 /* LoadingViewController.swift in Sources */,
 				AA8BD0422386C6FA00669941 /* PrivacyInfoModalViewController.swift in Sources */,

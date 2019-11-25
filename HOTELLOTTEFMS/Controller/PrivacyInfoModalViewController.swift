@@ -9,9 +9,16 @@
 import UIKit
 
 class PrivacyInfoModalViewController: UIViewController{
+    @IBOutlet weak var privacymaintitle: UILabel!
+    @IBOutlet weak var privacysubtitle: UILabel!
+    @IBOutlet weak var agreebuttonoutlet: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        privacymaintitle.text = "privacymaintitle".localized()
+        privacysubtitle.text="privacysubtitle".localized()
+        agreebuttonoutlet.setTitle("agreebuttontitle".localized(), for: .normal)
     }
     
     override func viewDidAppear(_ animated: Bool) {

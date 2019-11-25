@@ -11,6 +11,9 @@ import UIKit
 class SettingViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var serveriplabel: UILabel!
     @IBOutlet weak var serverportlabel: UILabel!
+    @IBOutlet weak var settingnavbar: UINavigationBar!
+    @IBOutlet weak var savebuttonoutlet: UIButton!
+    
     
     @IBOutlet weak var ip_textfield: UITextField! {
         didSet{
@@ -33,6 +36,8 @@ class SettingViewController: UIViewController, UITextFieldDelegate {
         
         serveriplabel.text = "ServerIP".localized()
         serverportlabel.text = "ServerPORT".localized()
+        settingnavbar.topItem?.title = "Setting".localized()
+        savebuttonoutlet.setTitle("Savebuttontitle".localized(), for: .normal)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -57,9 +62,9 @@ class SettingViewController: UIViewController, UITextFieldDelegate {
                 let port_textfiled_text : String = port_textfield.text!
                 
                 if(ip_textfield_text.isEmpty || port_textfiled_text.isEmpty || NetworkUtil.isIPv4(ip_textfield_text) == false){
-                    let inputCheckAlert = UIAlertController(title: "HOTEL FMS", message: "입력정보가 올바르지 않습니다. IP, PORT정보를 다시 입력해주세요", preferredStyle: UIAlertController.Style.alert)
+                    let inputCheckAlert = UIAlertController(title: "HOTEL FMS", message: "ipportvalidationmessage".localized(), preferredStyle: UIAlertController.Style.alert)
                     
-                    inputCheckAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+                    inputCheckAlert.addAction(UIAlertAction(title: "okmodalbutton".localized(), style: .default, handler: { (action: UIAlertAction!) in
                     }))
                     
                     self.present(inputCheckAlert, animated: true, completion: nil)
@@ -111,11 +116,5 @@ class SettingViewController: UIViewController, UITextFieldDelegate {
         port_textfield.resignFirstResponder()
         
         return true
-    }
-}
-
-extension String {
-    func localized(bundle: Bundle = .main, tableName: String = "Localizable") -> String{
-        return NSLocalizedString(self, tableName: tableName, value: "**\(self)**", comment: "")
     }
 }

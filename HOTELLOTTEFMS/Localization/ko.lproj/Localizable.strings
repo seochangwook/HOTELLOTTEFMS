@@ -5,5 +5,15 @@
   Created by ldcc on 2019/11/25.
   Copyright © 2019 ldcc. All rights reserved.
 */
+///SettingViewController
 "ServerIP" = "서버 IP";
 "ServerPORT" = "포트번호";
+"Setting" = "설정";
+"Savebuttontitle" = "확인";
+"ipportvalidationmessage" = "입력정보가 올바르지 않습니다. IP, PORT정보를 다시 입력해주세요";
+"okmodalbutton" = "확인";
+
+///PrivacyInfoModalViewController
+"privacymaintitle" = "App 사용자 동의사항";
+"privacysubtitle" = "동의를 해야지 App사용이 가능합니다";
+"agreebuttontitle" = "동의";

@@ -5,5 +5,18 @@
   Created by ldcc on 2019/11/25.
   Copyright © 2019 ldcc. All rights reserved.
 */
+///Common
+
+
+///SettingViewController
 "ServerIP" = "Server IP";
 "ServerPORT" = "Server PORT";
+"Setting" = "Setting";
+"Savebuttontitle" = "Ok";
+"ipportvalidationmessage" = "The input information is incorrect. Please enter IP and PORT information again";
+"okmodalbutton" = "Ok";
+
+///PrivacyInfoModalViewController
+"privacymaintitle" = "App User Agreement";
+"privacysubtitle" = "You must agree to use the App";
+"agreebuttontitle" = "Agree";

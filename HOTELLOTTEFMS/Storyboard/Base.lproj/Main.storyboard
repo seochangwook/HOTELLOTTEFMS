@@ -175,8 +175,10 @@
                     <connections>
                         <outlet property="ip_textfield" destination="NIX-Xr-H8Q" id="gnd-u1-e2M"/>
                         <outlet property="port_textfield" destination="U0q-aE-dAT" id="aSY-Bq-Zpn"/>
+                        <outlet property="savebuttonoutlet" destination="cBL-fU-Nfv" id="XEr-TA-wT1"/>
                         <outlet property="serveriplabel" destination="1PQ-qK-dBm" id="7aJ-WM-otb"/>
                         <outlet property="serverportlabel" destination="lue-qa-fhO" id="3Ds-3x-ZhR"/>
+                        <outlet property="settingnavbar" destination="AwU-97-XQ2" id="wgR-w6-SrJ"/>
                         <segue destination="DqW-dE-Thw" kind="modal" identifier="setting_privacymodal" id="6Hg-xz-H13"/>
                     </connections>
                 </viewController>
@@ -291,6 +293,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4ER-hh-EXp"/>
                     </view>
+                    <connections>
+                        <outlet property="agreebuttonoutlet" destination="GKV-Q3-Exv" id="SOh-CS-Rp1"/>
+                        <outlet property="privacymaintitle" destination="gqr-qS-59i" id="H58-To-4pV"/>
+                        <outlet property="privacysubtitle" destination="38l-dv-VmN" id="1vL-jg-L3n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tpk-e0-Ocn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -320,7 +327,7 @@
         <image name="splashimage.png" width="250" height="428"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JKL-sN-Wpe"/>
-        <segue reference="TJc-SJ-HoA"/>
+        <segue reference="6qR-R7-AyY"/>
+        <segue reference="PYO-7n-EC2"/>
     </inferredMetricsTieBreakers>
 </document>
