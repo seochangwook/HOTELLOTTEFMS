@@ -52,7 +52,7 @@
 		1BEC98FDDE24CAF1C9C50963 /* Pods-HOTELLOTTEFMSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOTELLOTTEFMSTests.release.xcconfig"; path = "Target Support Files/Pods-HOTELLOTTEFMSTests/Pods-HOTELLOTTEFMSTests.release.xcconfig"; sourceTree = "<group>"; };
 		3ADBD9CADD8F48CA968CCBAE /* Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests.debug.xcconfig"; path = "Target Support Files/Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests/Pods-HOTELLOTTEFMS-HOTELLOTTEFMSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E8B2800799A7F3FFD9E941D /* Pods-HOTELLOTTEFMS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOTELLOTTEFMS.debug.xcconfig"; path = "Target Support Files/Pods-HOTELLOTTEFMS/Pods-HOTELLOTTEFMS.debug.xcconfig"; sourceTree = "<group>"; };
-		623BD97D235E9BC5008A9C74 /* HOTELLOTTEFMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HOTELLOTTEFMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		623BD97D235E9BC5008A9C74 /* L.FMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = L.FMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		623BD980235E9BC5008A9C74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		623BD982235E9BC5008A9C74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		623BD984235E9BC5008A9C74 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 		623BD97E235E9BC5008A9C74 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				623BD97D235E9BC5008A9C74 /* HOTELLOTTEFMS.app */,
+				623BD97D235E9BC5008A9C74 /* L.FMS.app */,
 				623BD993235E9BC7008A9C74 /* HOTELLOTTEFMSTests.xctest */,
 				623BD99E235E9BC7008A9C74 /* HOTELLOTTEFMSUITests.xctest */,
 			);
@@ -288,7 +288,7 @@
 			);
 			name = HOTELLOTTEFMS;
 			productName = LOTTEHOTELFMS;
-			productReference = 623BD97D235E9BC5008A9C74 /* HOTELLOTTEFMS.app */;
+			productReference = 623BD97D235E9BC5008A9C74 /* L.FMS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		623BD992235E9BC7008A9C74 /* HOTELLOTTEFMSTests */ = {
@@ -683,7 +683,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ldcc.HOTELLOTTEFMS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = L.FMS;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -703,7 +703,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ldcc.HOTELLOTTEFMS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = L.FMS;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
