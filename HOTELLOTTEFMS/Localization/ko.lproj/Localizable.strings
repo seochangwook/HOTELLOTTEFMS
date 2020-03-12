@@ -11,7 +11,7 @@
 "cancelmodalbutton" = "취소";
 
 ///SettingViewController
-"ServerIP" = "서버 IP";
+"ServerIP" = "도메인";
 "ServerPORT" = "포트번호";
 "Setting" = "설정";
 "Savebuttontitle" = "확인";

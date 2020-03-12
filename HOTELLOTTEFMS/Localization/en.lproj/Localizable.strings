@@ -11,7 +11,7 @@
 "cancelmodalbutton" = "Cancel";
 
 ///SettingViewController
-"ServerIP" = "Server IP";
+"ServerIP" = "Domain";
 "ServerPORT" = "Server PORT";
 "Setting" = "Setting";
 "Savebuttontitle" = "Ok";
