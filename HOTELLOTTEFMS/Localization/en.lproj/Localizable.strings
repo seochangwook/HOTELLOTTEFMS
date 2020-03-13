@@ -6,7 +6,7 @@
   Copyright © 2019 ldcc. All rights reserved.
 */
 ///Common
-"AppTitle" = "HOTEL FMS";
+"AppTitle" = "L.FMS";
 "okmodalbutton" = "Ok";
 "cancelmodalbutton" = "Cancel";
 

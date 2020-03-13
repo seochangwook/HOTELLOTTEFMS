@@ -6,7 +6,7 @@
   Copyright © 2019 ldcc. All rights reserved.
 */
 ///Common
-"AppTitle" = "HOTEL FMS";
+"AppTitle" = "L.FMS";
 "okmodalbutton" = "확인";
 "cancelmodalbutton" = "취소";
 
