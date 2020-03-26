@@ -115,7 +115,7 @@ class MainWebViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
             port = getPort
         }
         
-        let url = URL(string: "http://" + ip + ":" + port)
+        let url = URL(string: "https://" + ip)
         let request = URLRequest(url: url!)
         
         ///Delegating Setting
